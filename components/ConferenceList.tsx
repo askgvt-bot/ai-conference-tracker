@@ -66,7 +66,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   const [size, setSize] = useState("All");
   const [month, setMonth] = useState("All");
   const [price, setPrice] = useState("All");
-  const [sort, setSort] = useState("Score");
+  const [sort, setSort] = useState("Date");
 
   const sizeOrder: Record<string, number> = { small: 1, medium: 2, large: 3, mega: 4 };
 
@@ -110,7 +110,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   }, [region, type, size, month, price]);
 
   const clearAll = useCallback(() => {
-    setSearch(""); setRegion("All"); setType("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Score");
+    setSearch(""); setRegion("All"); setType("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date");
   }, []);
 
   return (
