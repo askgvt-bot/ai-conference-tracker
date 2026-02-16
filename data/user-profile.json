@@ -1,0 +1,45 @@
+{
+  "name": "Nick Halstead",
+  "company": "GVTLabs / AskGVT",
+  "base_location": "Dubai, UAE",
+  "focus_areas": [
+    "video AI",
+    "creator economy",
+    "enterprise AI",
+    "content intelligence",
+    "multimodal AI",
+    "computer vision"
+  ],
+  "goals": [
+    "fundraising",
+    "partnerships",
+    "visibility",
+    "product feedback"
+  ],
+  "target_speakers": [
+    "Jensen Huang",
+    "Sam Altman",
+    "Demis Hassabis",
+    "Satya Nadella",
+    "Peng Xiao"
+  ],
+  "target_orgs": [
+    "G42",
+    "Google",
+    "Microsoft",
+    "NVIDIA",
+    "OpenAI",
+    "Anthropic",
+    "a16z",
+    "Sequoia",
+    "Dubai Future Foundation",
+    "DIFC"
+  ],
+  "preferred_regions": [
+    "Middle East",
+    "Europe",
+    "North America"
+  ],
+  "quarterly_budget": 5000,
+  "max_conferences_per_quarter": 4
+}

@@ -27,6 +27,9 @@ function Header() {
           <Link href="/speakers" className="px-3 py-1.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">
             Speakers
           </Link>
+          <Link href="/recommendations" className="px-3 py-1.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">
+            For You
+          </Link>
           <Link href="/calendar" className="px-3 py-1.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">
             Calendar
           </Link>
