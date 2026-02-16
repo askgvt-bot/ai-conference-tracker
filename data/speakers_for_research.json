@@ -1,0 +1,664 @@
+{
+  "real_speakers": 33,
+  "speakers_for_research": [
+    {
+      "id": "jensen-huang",
+      "name": "Jensen Huang",
+      "title": "CEO",
+      "organization": "NVIDIA",
+      "conferences": [
+        "nvidia-gtc-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "GPU computing",
+        "AI training",
+        "inference"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "ashok-elluswamy",
+      "name": "Ashok Elluswamy",
+      "title": "VP, AI Software",
+      "organization": "Tesla",
+      "conferences": [
+        "nvidia-gtc-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "GPU computing",
+        "AI training",
+        "inference"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "deep-learning-pioneers",
+      "name": "Deep Learning Pioneers",
+      "title": "Various",
+      "organization": "Academic & Industry",
+      "conferences": [
+        "iclr-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "deep learning",
+        "representation learning",
+        "neural networks"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "nitin-akarte",
+      "name": "Nitin Akarte",
+      "title": "AI Network Director",
+      "organization": "Microsoft",
+      "conferences": [
+        "world-ai-expo-dubai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "enterprise AI",
+        "startups",
+        "investment"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "akshay-singh-dalal",
+      "name": "Akshay Singh Dalal",
+      "title": "Head of Regional Risk & Compliance",
+      "organization": "Google",
+      "conferences": [
+        "world-ai-expo-dubai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "enterprise AI",
+        "startups",
+        "investment"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "anwesha-kar",
+      "name": "Anwesha Kar",
+      "title": "System Software Engineer",
+      "organization": "NVIDIA",
+      "conferences": [
+        "world-ai-expo-dubai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "enterprise AI",
+        "startups",
+        "investment"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "faraz-shafiq",
+      "name": "Faraz Shafiq",
+      "title": "Enterprise Technologist - Agentic AI and Gen AI",
+      "organization": "AWS",
+      "conferences": [
+        "world-ai-expo-dubai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "enterprise AI",
+        "startups",
+        "investment"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "chief-ai-officers",
+      "name": "Chief AI Officers",
+      "title": "Various",
+      "organization": "Fortune 500 Companies",
+      "conferences": [
+        "chief-ai-officer-dubai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI leadership",
+        "strategy",
+        "governance"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "ieee-ai-community",
+      "name": "IEEE AI Community",
+      "title": "Various",
+      "organization": "IEEE Members",
+      "conferences": [
+        "ieee-cai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "artificial intelligence"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "ai-research-pioneers",
+      "name": "AI Research Pioneers",
+      "title": "Various",
+      "organization": "International AI Community",
+      "conferences": [
+        "ijcai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "artificial intelligence",
+        "multi-agent systems",
+        "knowledge representation"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "he-omar-sultan-al-olama",
+      "name": "H.E. Omar Sultan Al Olama",
+      "title": "Minister of State for AI, Digital Economy & Remote Work",
+      "organization": "UAE Government",
+      "conferences": [
+        "dubai-ai-festival-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI governance",
+        "national AI strategy",
+        "digital transformation"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "crown-prince-of-dubai",
+      "name": "Crown Prince of Dubai",
+      "title": "Deputy Prime Minister",
+      "organization": "UAE Government",
+      "conferences": [
+        "dubai-ai-festival-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI governance",
+        "national AI strategy",
+        "digital transformation"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "north-american-tech-giants",
+      "name": "North American Tech Giants",
+      "title": "Various",
+      "organization": "Major Tech Companies",
+      "conferences": [
+        "collision-toronto-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "technology",
+        "AI",
+        "startups"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "mit-ai-faculty",
+      "name": "MIT AI Faculty",
+      "title": "Various",
+      "organization": "MIT",
+      "conferences": [
+        "mit-ai-conference-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI research",
+        "practical deployment",
+        "responsible AI"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "industry-ai-practitioners",
+      "name": "Industry AI Practitioners",
+      "title": "Various",
+      "organization": "Enterprise Companies",
+      "conferences": [
+        "ai4-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI applications",
+        "enterprise solutions",
+        "industry verticals"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "ai-visionaries",
+      "name": "AI Visionaries",
+      "title": "",
+      "organization": "Global",
+      "conferences": [
+        "ai-week-milan-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI transformation",
+        "creativity",
+        "society"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "ml-engineers",
+      "name": "ML Engineers",
+      "title": "Various",
+      "organization": "Tech Companies",
+      "conferences": [
+        "mlcon-san-diego-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "MLOps",
+        "LLMOps",
+        "generative AI"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "ai-engineers",
+      "name": "AI Engineers",
+      "title": "Various",
+      "organization": "AI Companies",
+      "conferences": [
+        "ai-engineer-worlds-fair-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI engineering",
+        "deployment",
+        "scaling"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "senior-decision-makers",
+      "name": "Senior Decision-Makers",
+      "title": "Various",
+      "organization": "US Enterprises",
+      "conferences": [
+        "ai-summit-new-york-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "strategic AI",
+        "enterprise applications",
+        "responsible AI"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "swiss-ai-community",
+      "name": "Swiss AI Community",
+      "title": "Various",
+      "organization": "Swiss Organizations",
+      "conferences": [
+        "zurich-ai-festival-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI and society",
+        "business applications",
+        "cross-industry collaboration"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "yoshua-bengio",
+      "name": "Yoshua Bengio",
+      "title": "Turing Award Winner",
+      "organization": "Mila",
+      "conferences": [
+        "all-in-montreal-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI-powered economy",
+        "research commercialization",
+        "Canadian AI"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "international-ai-community",
+      "name": "International AI Community",
+      "title": "Various",
+      "organization": "Global Research Community",
+      "conferences": [
+        "ijcai-ecai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "general AI research",
+        "NLP",
+        "robotics"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "raai-research-community",
+      "name": "RAAI Research Community",
+      "title": "Various",
+      "organization": "Academic Institutions",
+      "conferences": [
+        "raai-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "robotics",
+        "automation",
+        "artificial intelligence"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "robotics-scientists",
+      "name": "Robotics Scientists",
+      "title": "Various",
+      "organization": "Japanese & International",
+      "conferences": [
+        "icras-kyoto-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI-powered robotics",
+        "automation sciences",
+        "robotics research"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "finance-academics",
+      "name": "Finance Academics",
+      "title": "Various",
+      "organization": "Universities",
+      "conferences": [
+        "ai-finance-conference-maryland-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "AI in finance",
+        "financial research",
+        "academic perspectives"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "crowdstrike-leadership",
+      "name": "CrowdStrike Leadership",
+      "title": "Various",
+      "organization": "CrowdStrike",
+      "conferences": [
+        "fal-con-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "cybersecurity",
+        "AI era security",
+        "threat hunting"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "security-professionals",
+      "name": "Security Professionals",
+      "title": "Various",
+      "organization": "Security Industry",
+      "conferences": [
+        "apres-cyber-slopes-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "cybersecurity",
+        "unique setting",
+        "networking"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "aws-leadership",
+      "name": "AWS Leadership",
+      "title": "Various",
+      "organization": "Amazon Web Services",
+      "conferences": [
+        "aws-reinvent-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "cloud computing",
+        "AWS services",
+        "AI/ML on AWS"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "google-leadership",
+      "name": "Google Leadership",
+      "title": "Various",
+      "organization": "Google",
+      "conferences": [
+        "google-io-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "Google AI",
+        "machine learning",
+        "developer tools"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "microsoft-leadership",
+      "name": "Microsoft Leadership",
+      "title": "Various",
+      "organization": "Microsoft",
+      "conferences": [
+        "microsoft-build-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "Microsoft AI",
+        "Azure",
+        "developer tools"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "apple-leadership",
+      "name": "Apple Leadership",
+      "title": "Various",
+      "organization": "Apple Inc.",
+      "conferences": [
+        "apple-wwdc-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "Apple AI",
+        "iOS",
+        "macOS"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "meta-leadership",
+      "name": "Meta Leadership",
+      "title": "Various",
+      "organization": "Meta",
+      "conferences": [
+        "meta-connect-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "VR/AR",
+        "metaverse",
+        "AI"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    },
+    {
+      "id": "startup-founders-vcs",
+      "name": "Startup Founders & VCs",
+      "title": "Various",
+      "organization": "Startup Ecosystem",
+      "conferences": [
+        "techcrunch-disrupt-2026"
+      ],
+      "conference_count": 1,
+      "focus_areas": [
+        "startups",
+        "AI innovation",
+        "venture capital"
+      ],
+      "bio": "",
+      "linkedin": "",
+      "twitter": "",
+      "photo_url": "",
+      "importance_score": 50
+    }
+  ],
+  "placeholder_count": 73
+}
