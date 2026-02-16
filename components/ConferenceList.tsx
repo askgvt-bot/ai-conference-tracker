@@ -67,7 +67,9 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   const [month, setMonth] = useState("All");
   const [price, setPrice] = useState("All");
   const [sort, setSort] = useState("Date");
+  const [showPast, setShowPast] = useState(false);
 
+  const today = useMemo(() => new Date().toISOString().split("T")[0], []);
   const sizeOrder: Record<string, number> = { small: 1, medium: 2, large: 3, mega: 4 };
 
   const filtered = useMemo(() => {
@@ -88,6 +90,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
     if (size !== "All") result = result.filter((c) => c.size.toLowerCase() === size.toLowerCase());
     if (month !== "All") result = result.filter((c) => c.dates.start.startsWith(month));
     if (price !== "All") result = result.filter((c) => getPriceCategory(c.ticket_price.range) === price);
+    if (!showPast) result = result.filter((c) => (c.dates.end || c.dates.start) >= today);
 
     result = [...result].sort((a, b) => {
       if (sort === "Score") return b.score - a.score;
@@ -97,7 +100,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
       return 0;
     });
     return result;
-  }, [conferences, search, region, type, size, month, price, sort, sizeOrder]);
+  }, [conferences, search, region, type, size, month, price, sort, showPast, today, sizeOrder]);
 
   const activeFilters = useMemo(() => {
     const f: { label: string; clear: () => void }[] = [];
@@ -110,7 +113,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   }, [region, type, size, month, price]);
 
   const clearAll = useCallback(() => {
-    setSearch(""); setRegion("All"); setType("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date");
+    setSearch(""); setRegion("All"); setType("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date"); setShowPast(false);
   }, []);
 
   return (
@@ -134,6 +137,15 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
         <Select label="Size" value={size} options={SIZES} onChange={setSize} />
         <Select label="Price" value={price} options={PRICES} onChange={setPrice} />
         <Select label="Sort" value={sort} options={SORTS} onChange={setSort} />
+        <button
+          onClick={() => setShowPast(!showPast)}
+          className={`flex items-center gap-2 px-3 py-2 rounded-lg border text-sm transition-all ${showPast ? "bg-cyan-500/20 text-cyan-400 border-cyan-500/40" : "border-white/10 text-gray-400 hover:text-white hover:border-white/20"}`}
+        >
+          <span className={`w-4 h-4 rounded border flex items-center justify-center text-xs ${showPast ? "bg-cyan-500 border-cyan-500 text-white" : "border-white/20"}`}>
+            {showPast && "✓"}
+          </span>
+          Show past events
+        </button>
       </div>
 
       {/* Month pills */}
