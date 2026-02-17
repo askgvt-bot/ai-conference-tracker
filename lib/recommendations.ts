@@ -1,5 +1,4 @@
 import { Conference, Speaker, getConferences, getSpeakers } from '@/lib/data';
-import userProfile from '@/data/user-profile.json';
 
 export interface UserProfile {
   name: string;
@@ -120,14 +119,12 @@ function areRelatedTerms(term1: string, term2: string): boolean {
 }
 
 // Calculate relevance score (0-100)
-function calculateRelevanceScore(conference: Conference): number {
-  const profile = userProfile as UserProfile;
+function calculateRelevanceScore(conference: Conference, profile: UserProfile): number {
   return calculateFocusAreaMatch(conference.focus_areas, profile.focus_areas);
 }
 
 // Calculate network score (0-100)
-function calculateNetworkScore(conference: Conference, speakers: Speaker[]): number {
-  const profile = userProfile as UserProfile;
+function calculateNetworkScore(conference: Conference, speakers: Speaker[], profile: UserProfile): number {
   let targetSpeakerCount = 0;
   let targetOrgCount = 0;
 
@@ -156,41 +153,34 @@ function calculateNetworkScore(conference: Conference, speakers: Speaker[]): num
 }
 
 // Calculate geographic score (0-100)
-function calculateGeographicScore(conference: Conference): number {
-  const profile = userProfile as UserProfile;
+function calculateGeographicScore(conference: Conference, profile: UserProfile): number {
   const country = conference.location.country.toLowerCase();
   const city = conference.location.city.toLowerCase();
 
-  // Middle East
-  const middleEastCountries = ['uae', 'saudi arabia', 'qatar', 'bahrain', 'kuwait', 'oman'];
-  if (middleEastCountries.some(c => country.includes(c)) || city.includes('dubai') || city.includes('riyadh')) {
-    return 100;
+  const regionMap: Record<string, (c: string, ci: string) => boolean> = {
+    'Middle East': (c, ci) => ['uae', 'saudi arabia', 'qatar', 'bahrain', 'kuwait', 'oman'].some(x => c.includes(x)) || ci.includes('dubai') || ci.includes('riyadh'),
+    'Europe': (c, ci) => ['uk', 'united kingdom', 'germany', 'france', 'netherlands', 'switzerland', 'spain', 'italy', 'austria', 'belgium', 'sweden', 'portugal'].some(x => c.includes(x)) || ci.includes('london') || ci.includes('berlin') || ci.includes('paris'),
+    'Asia': (c) => ['singapore', 'india', 'japan', 'south korea', 'china', 'thailand', 'indonesia', 'malaysia', 'vietnam', 'taiwan', 'hong kong'].some(x => c.includes(x)),
+    'North America': (c, ci) => c.includes('usa') || c.includes('canada') || ci.includes('san francisco') || ci.includes('new york'),
+    'Global': () => true,
+  };
+
+  const preferredRegions = profile.preferred_regions || [];
+  
+  // Score based on whether conference is in a preferred region
+  for (let i = 0; i < preferredRegions.length; i++) {
+    const checker = regionMap[preferredRegions[i]];
+    if (checker && checker(country, city)) {
+      return Math.max(100 - i * 10, 70); // First preferred region = 100, second = 90, etc.
+    }
   }
 
-  // Europe
-  const europeanCountries = ['uk', 'united kingdom', 'germany', 'france', 'netherlands', 'switzerland', 'spain', 'italy', 'austria', 'belgium'];
-  if (europeanCountries.some(c => country.includes(c)) || city.includes('london') || city.includes('berlin') || city.includes('paris')) {
-    return 80;
+  // Check all regions for partial match
+  for (const [region, checker] of Object.entries(regionMap)) {
+    if (checker(country, city)) return 40;
   }
 
-  // Asia (close to Dubai)
-  const asiaCountries = ['singapore', 'india', 'japan', 'south korea', 'china', 'thailand'];
-  if (asiaCountries.some(c => country.includes(c))) {
-    return 70;
-  }
-
-  // North America
-  if (country.includes('usa') || country.includes('canada') || city.includes('san francisco') || city.includes('new york')) {
-    return 60;
-  }
-
-  // Australia
-  if (country.includes('australia')) {
-    return 50;
-  }
-
-  // Others
-  return 30;
+  return 20;
 }
 
 // Calculate value score (0-100) - conference quality vs price
@@ -254,10 +244,16 @@ function calculateClusterBonus(conference: Conference, allConferences: Conferenc
 }
 
 // Main recommendation function
-export function getConferenceRecommendations(filters?: RecommendationFilters): ConferenceRecommendation[] {
+export function getConferenceRecommendations(filters?: RecommendationFilters, profile?: UserProfile): ConferenceRecommendation[] {
   const conferences = getConferences();
   const speakers = getSpeakers();
   const weights = { ...DEFAULT_SCORE_WEIGHTS, ...filters?.scoreWeights };
+  
+  // Use provided profile or a default
+  if (!profile) {
+    const defaultProfile = require('@/data/user-profile.json');
+    profile = defaultProfile as UserProfile;
+  }
   
   const recommendations: ConferenceRecommendation[] = [];
   
@@ -270,23 +266,16 @@ export function getConferenceRecommendations(filters?: RecommendationFilters): C
     }
 
     if (filters?.regions && filters.regions.length > 0) {
-      const matchesRegion = filters.regions.some(region => {
-        if (region === 'Middle East') {
-          return calculateGeographicScore(conference) >= 95;
-        } else if (region === 'Europe') {
-          return calculateGeographicScore(conference) >= 75 && calculateGeographicScore(conference) < 95;
-        } else if (region === 'North America') {
-          return conference.location.country.toLowerCase().includes('usa') || conference.location.country.toLowerCase().includes('canada');
-        }
-        return false;
-      });
-      if (!matchesRegion) continue;
+      // Create a temporary profile with the filter regions as preferred to test membership
+      const tempProfile = { ...profile!, preferred_regions: filters.regions };
+      const geoScore = calculateGeographicScore(conference, tempProfile);
+      if (geoScore < 70) continue;
     }
     
     // Calculate scores
-    const relevance = calculateRelevanceScore(conference);
-    const network = calculateNetworkScore(conference, speakers);
-    const geographic = calculateGeographicScore(conference);
+    const relevance = calculateRelevanceScore(conference, profile!);
+    const network = calculateNetworkScore(conference, speakers, profile!);
+    const geographic = calculateGeographicScore(conference, profile!);
     const value = calculateValueScore(conference);
     const { score: cluster, clusteredWith } = calculateClusterBonus(conference, conferences);
     
@@ -313,7 +302,7 @@ export function getConferenceRecommendations(filters?: RecommendationFilters): C
     const reasons: string[] = [];
     if (network > 60) {
       const speakerCount = conference.speakers.filter(s => 
-        userProfile.target_speakers.some(ts => ts.toLowerCase() === s.name.toLowerCase())
+        profile!.target_speakers.some(ts => ts.toLowerCase() === s.name.toLowerCase())
       ).length;
       if (speakerCount > 0) {
         reasons.push(`${speakerCount} target speaker${speakerCount > 1 ? 's' : ''} attending`);
@@ -355,8 +344,8 @@ export function getConferenceRecommendations(filters?: RecommendationFilters): C
 }
 
 // Get recommendations grouped by tier
-export function getRecommendationsByTier(filters?: RecommendationFilters) {
-  const recommendations = getConferenceRecommendations(filters);
+export function getRecommendationsByTier(filters?: RecommendationFilters, profile?: UserProfile) {
+  const recommendations = getConferenceRecommendations(filters, profile);
   
   return {
     'must-attend': recommendations.filter(r => r.tier === 'must-attend'),
@@ -366,8 +355,8 @@ export function getRecommendationsByTier(filters?: RecommendationFilters) {
 }
 
 // Calculate total cost and summary statistics
-export function getRecommendationsSummary(filters?: RecommendationFilters) {
-  const recommendations = getConferenceRecommendations(filters);
+export function getRecommendationsSummary(filters?: RecommendationFilters, profile?: UserProfile) {
+  const recommendations = getConferenceRecommendations(filters, profile);
   const mustAttend = recommendations.filter(r => r.tier === 'must-attend');
   
   // Rough cost calculation (simplified)

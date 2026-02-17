@@ -1,466 +1,481 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { 
-  getRecommendationsByTier, 
-  getRecommendationsSummary,
-  ConferenceRecommendation,
-  RecommendationFilters 
-} from '@/lib/recommendations';
-import userProfile from '@/data/user-profile.json';
 
-// Score bar component
-function ScoreBar({ 
-  scores, 
-  className = '' 
-}: { 
-  scores: { relevance: number; network: number; geographic: number; value: number; cluster: number }; 
-  className?: string;
-}) {
-  const total = scores.relevance + scores.network + scores.geographic + scores.value + scores.cluster;
-  
-  return (
-    <div className={`flex h-2 rounded-full overflow-hidden bg-gray-800 ${className}`}>
-      <div 
-        className="bg-blue-500" 
-        style={{ width: `${(scores.relevance / total) * 100}%` }}
-        title={`Relevance: ${scores.relevance.toFixed(1)}`}
-      />
-      <div 
-        className="bg-purple-500" 
-        style={{ width: `${(scores.network / total) * 100}%` }}
-        title={`Network: ${scores.network.toFixed(1)}`}
-      />
-      <div 
-        className="bg-green-500" 
-        style={{ width: `${(scores.geographic / total) * 100}%` }}
-        title={`Geographic: ${scores.geographic.toFixed(1)}`}
-      />
-      <div 
-        className="bg-yellow-500" 
-        style={{ width: `${(scores.value / total) * 100}%` }}
-        title={`Value: ${scores.value.toFixed(1)}`}
-      />
-      <div 
-        className="bg-indigo-500" 
-        style={{ width: `${(scores.cluster / total) * 100}%` }}
-        title={`Cluster: ${scores.cluster.toFixed(1)}`}
-      />
-    </div>
-  );
+const FOCUS_AREAS = [
+  'AI/ML', 'Computer Vision', 'NLP', 'Robotics', 'Healthcare AI',
+  'Enterprise AI', 'Creator Economy', 'Video AI', 'Autonomous Vehicles',
+  'Climate/Energy AI', 'Fintech AI', 'Generative AI', 'LLMs',
+  'Multimodal AI', 'AI Safety', 'Edge AI/IoT',
+];
+
+const GOALS = [
+  'Fundraising', 'Partnerships', 'Hiring', 'Learning',
+  'Networking', 'Speaking opportunities', 'Product feedback', 'Market research',
+];
+
+const REGIONS = ['North America', 'Europe', 'Middle East', 'Asia', 'Global'];
+
+const LOCATIONS = [
+  'San Francisco, USA', 'New York, USA', 'London, UK', 'Berlin, Germany',
+  'Paris, France', 'Dubai, UAE', 'Singapore', 'Tokyo, Japan',
+  'Toronto, Canada', 'Sydney, Australia', 'Amsterdam, Netherlands',
+  'Riyadh, Saudi Arabia', 'Mumbai, India', 'São Paulo, Brazil',
+  'Tel Aviv, Israel', 'Seoul, South Korea', 'Shanghai, China',
+  'Zürich, Switzerland', 'Stockholm, Sweden', 'Other',
+];
+
+const DATE_RANGES = [
+  { label: 'Next 3 months', value: 3 },
+  { label: 'Next 6 months', value: 6 },
+  { label: 'Next 12 months', value: 12 },
+];
+
+const STEPS = ['About You', 'Focus Areas', 'Goals', 'Preferences', 'Target People'];
+
+interface FormData {
+  name: string;
+  company: string;
+  role: string;
+  location: string;
+  focusAreas: string[];
+  otherInterests: string;
+  goals: string[];
+  budget: number;
+  regions: string[];
+  dateRange: number;
+  maxTravel: string;
+  targetPeopleOrgs: string;
 }
 
-// Conference card component
-function ConferenceCard({ recommendation }: { recommendation: ConferenceRecommendation }) {
-  const { conference, scores, tier, reasons } = recommendation;
-  
-  const tierConfig = {
-    'must-attend': {
-      badge: '🔴 Must-Attend',
-      bgClass: 'bg-red-500/10 border-red-500/30',
-      textClass: 'text-red-400',
-      glowClass: 'shadow-red-500/20'
-    },
-    'consider': {
-      badge: '🟡 Consider',
-      bgClass: 'bg-amber-500/10 border-amber-500/30',
-      textClass: 'text-amber-400',
-      glowClass: 'shadow-amber-500/20'
-    },
-    'skip': {
-      badge: '⚪ Skip',
-      bgClass: 'bg-gray-500/10 border-gray-500/30',
-      textClass: 'text-gray-400',
-      glowClass: 'shadow-gray-500/20'
-    }
-  };
-  
-  const config = tierConfig[tier];
-  
+function ProgressBar({ step, total }: { step: number; total: number }) {
   return (
-    <Link href={`/conference/${conference.id}`} className="block group">
-      <div className={`relative rounded-xl border backdrop-blur-sm transition-all duration-300 hover:scale-[1.02] p-6 ${config.bgClass} ${config.glowClass} shadow-2xl hover:shadow-3xl`}>
-        {/* Tier badge */}
-        <div className={`absolute -top-3 -right-3 px-3 py-1 rounded-full text-xs font-bold border ${config.bgClass} ${config.textClass}`}>
-          {config.badge}
-        </div>
-        
-        {/* Header */}
-        <div className="flex items-start justify-between gap-4 mb-4">
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-cyan-400 transition-colors">
-              {conference.name}
-            </h3>
-            <p className="text-sm text-gray-400">
-              {new Date(conference.dates.start).toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric',
-                year: 'numeric'
-              })} - {new Date(conference.dates.end).toLocaleDateString('en-US', { 
-                month: 'short', 
-                day: 'numeric'
-              })}
-            </p>
-            <p className="text-sm text-gray-500">
-              📍 {conference.location.city}, {conference.location.country}
-            </p>
-          </div>
-          
-          <div className="text-right">
-            <div className={`text-2xl font-bold ${config.textClass}`}>
-              {scores.overall.toFixed(0)}
+    <div className="mb-8">
+      <div className="flex justify-between mb-2">
+        {STEPS.map((label, i) => (
+          <div key={label} className="flex flex-col items-center flex-1">
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
+              i < step ? 'bg-cyan-500 text-white' :
+              i === step ? 'bg-cyan-500/30 text-cyan-400 ring-2 ring-cyan-500' :
+              'bg-white/5 text-gray-600'
+            }`}>
+              {i < step ? '✓' : i + 1}
             </div>
-            <div className="text-xs text-gray-500">Score</div>
-          </div>
-        </div>
-        
-        {/* Score breakdown */}
-        <div className="mb-4">
-          <div className="flex items-center justify-between text-xs text-gray-400 mb-1">
-            <span>Score Breakdown</span>
-            <div className="flex gap-3">
-              <span className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded bg-blue-500" />
-                Relevance
-              </span>
-              <span className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded bg-purple-500" />
-                Network
-              </span>
-              <span className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded bg-green-500" />
-                Location
-              </span>
-              <span className="flex items-center gap-1">
-                <div className="w-2 h-2 rounded bg-yellow-500" />
-                Value
-              </span>
-            </div>
-          </div>
-          <ScoreBar scores={scores} />
-        </div>
-        
-        {/* Reasons */}
-        {reasons.length > 0 && (
-          <div className="mb-4">
-            <div className="text-xs text-gray-500 mb-2">Why recommended:</div>
-            <div className="flex flex-wrap gap-1">
-              {reasons.map((reason, index) => (
-                <span
-                  key={index}
-                  className="text-xs px-2 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20"
-                >
-                  {reason}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-        
-        {/* Cluster info */}
-        {recommendation.clusterWith && recommendation.clusterWith.length > 0 && (
-          <div className="flex items-center gap-2 text-xs text-indigo-400">
-            <span>🔗</span>
-            <span>Can combine with {recommendation.clusterWith.length} other conference{recommendation.clusterWith.length > 1 ? 's' : ''}</span>
-          </div>
-        )}
-        
-        {/* Conference details */}
-        <div className="mt-4 pt-4 border-t border-white/10 text-xs text-gray-400">
-          <div className="flex justify-between">
-            <span>{conference.size} ({conference.estimated_attendees?.toLocaleString()} attendees)</span>
-            <span>{conference.ticket_price.range}</span>
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
-// Travel planner component
-function TravelPlanner({ recommendations }: { recommendations: ConferenceRecommendation[] }) {
-  // Group conferences by region and proximity in time
-  const trips = useMemo(() => {
-    const mustAttend = recommendations.filter(r => r.tier === 'must-attend');
-    const tripGroups: { [key: string]: ConferenceRecommendation[] } = {};
-    
-    for (const rec of mustAttend) {
-      const country = rec.conference.location.country;
-      const startDate = new Date(rec.conference.dates.start);
-      const quarter = `Q${Math.ceil((startDate.getMonth() + 1) / 3)} ${startDate.getFullYear()}`;
-      const regionQuarter = `${country} - ${quarter}`;
-      
-      if (!tripGroups[regionQuarter]) {
-        tripGroups[regionQuarter] = [];
-      }
-      tripGroups[regionQuarter].push(rec);
-    }
-    
-    // Only show regions with multiple conferences or single high-value conferences
-    return Object.entries(tripGroups)
-      .filter(([_, conferences]) => conferences.length >= 1)
-      .map(([region, conferences]) => ({
-        region,
-        conferences: conferences.sort((a, b) => 
-          new Date(a.conference.dates.start).getTime() - new Date(b.conference.dates.start).getTime()
-        ),
-        estimatedCost: conferences.reduce((sum, c) => {
-          const priceStr = c.conference.ticket_price.range.toLowerCase();
-          if (priceStr.includes('$')) {
-            const matches = priceStr.match(/\$(\d+)/);
-            if (matches) {
-              return sum + parseInt(matches[1]);
-            }
-          }
-          return sum;
-        }, 0)
-      }))
-      .sort((a, b) => a.conferences.length > 1 ? -1 : 1); // Multi-conference trips first
-  }, [recommendations]);
-  
-  if (trips.length === 0) return null;
-  
-  return (
-    <div className="mb-12">
-      <h2 className="text-2xl font-bold text-blue-400 mb-6 flex items-center gap-2">
-        ✈️ Recommended Travel Plan
-      </h2>
-      <div className="grid gap-4">
-        {trips.map((trip, index) => (
-          <div key={trip.region} className="p-6 rounded-xl bg-blue-500/10 border border-blue-500/30">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <h3 className="text-lg font-semibold text-blue-400">Trip {index + 1}: {trip.region}</h3>
-                <p className="text-sm text-gray-400">
-                  {trip.conferences.length} conference{trip.conferences.length > 1 ? 's' : ''} • 
-                  Est. ${trip.estimatedCost.toLocaleString()} tickets
-                </p>
-              </div>
-              {trip.conferences.length > 1 && (
-                <span className="px-2 py-1 rounded-full bg-green-500/20 text-green-400 text-xs font-medium">
-                  Multi-Conference Trip
-                </span>
-              )}
-            </div>
-            
-            <div className="space-y-2">
-              {trip.conferences.map((rec) => (
-                <div key={rec.conference.id} className="flex items-center justify-between py-2 px-3 rounded-lg bg-white/5">
-                  <div className="flex items-center gap-3">
-                    <div className="text-red-400 font-bold">🔴</div>
-                    <div>
-                      <div className="text-white font-medium">{rec.conference.name}</div>
-                      <div className="text-sm text-gray-400">
-                        {new Date(rec.conference.dates.start).toLocaleDateString('en-US', { 
-                          month: 'short', 
-                          day: 'numeric'
-                        })} - {new Date(rec.conference.dates.end).toLocaleDateString('en-US', { 
-                          month: 'short', 
-                          day: 'numeric'
-                        })} • {rec.conference.location.city}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-white font-medium">{rec.conference.ticket_price.range}</div>
-                    <div className="text-xs text-gray-400">{rec.scores.overall.toFixed(0)} score</div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            {trip.conferences.length > 1 && (
-              <div className="mt-4 p-3 rounded-lg bg-green-500/10 border border-green-500/30">
-                <div className="text-sm text-green-400">
-                  💡 <strong>Travel Tip:</strong> Combining these conferences can save on flights and extend your networking opportunities in {trip.region}.
-                </div>
-              </div>
-            )}
+            <span className={`text-xs mt-1 hidden sm:block ${i <= step ? 'text-cyan-400' : 'text-gray-600'}`}>
+              {label}
+            </span>
           </div>
         ))}
       </div>
+      <div className="h-1 bg-white/5 rounded-full overflow-hidden">
+        <div
+          className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 transition-all duration-500 rounded-full"
+          style={{ width: `${((step + 1) / total) * 100}%` }}
+        />
+      </div>
     </div>
   );
 }
 
-// Filter component
-function FilterSidebar({ filters, onFiltersChange }: {
-  filters: RecommendationFilters;
-  onFiltersChange: (filters: RecommendationFilters) => void;
-}) {
+function StepAboutYou({ data, onChange }: { data: FormData; onChange: (d: Partial<FormData>) => void }) {
   return (
     <div className="space-y-6">
       <div>
-        <h3 className="text-lg font-semibold text-white mb-3">Filters</h3>
+        <h2 className="text-2xl font-bold text-white mb-1">Tell us about yourself</h2>
+        <p className="text-gray-400">We&apos;ll use this to personalize your conference recommendations.</p>
       </div>
-      
-      {/* Goals */}
-      <div>
-        <label className="text-sm font-medium text-gray-300 mb-2 block">Goals</label>
-        <div className="space-y-2">
-          {userProfile.goals.map((goal) => (
-            <label key={goal} className="flex items-center">
-              <input
-                type="checkbox"
-                checked={filters.goals?.includes(goal) ?? true}
-                onChange={(e) => {
-                  const newGoals = e.target.checked
-                    ? [...(filters.goals || []), goal]
-                    : (filters.goals || []).filter(g => g !== goal);
-                  onFiltersChange({ ...filters, goals: newGoals });
-                }}
-                className="rounded border-gray-600 bg-gray-800 text-cyan-500 focus:ring-cyan-500"
-              />
-              <span className="ml-2 text-sm text-gray-300 capitalize">{goal}</span>
-            </label>
-          ))}
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label className="block text-sm font-medium text-gray-300 mb-1">Name</label>
+          <input
+            type="text"
+            value={data.name}
+            onChange={e => onChange({ name: e.target.value })}
+            placeholder="Your name"
+            className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-300 mb-1">Company</label>
+          <input
+            type="text"
+            value={data.company}
+            onChange={e => onChange({ company: e.target.value })}
+            placeholder="Your company"
+            className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-300 mb-1">Role / Title</label>
+          <input
+            type="text"
+            value={data.role}
+            onChange={e => onChange({ role: e.target.value })}
+            placeholder="e.g. CTO, Product Manager, Investor"
+            className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+          />
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-300 mb-1">Base Location</label>
+          <select
+            value={data.location}
+            onChange={e => onChange({ location: e.target.value })}
+            className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+          >
+            <option value="" className="bg-gray-900">Select your city</option>
+            {LOCATIONS.map(loc => (
+              <option key={loc} value={loc} className="bg-gray-900">{loc}</option>
+            ))}
+          </select>
         </div>
       </div>
-      
-      {/* Quarters */}
+    </div>
+  );
+}
+
+function StepFocusAreas({ data, onChange }: { data: FormData; onChange: (d: Partial<FormData>) => void }) {
+  const toggle = (area: string) => {
+    const areas = data.focusAreas.includes(area)
+      ? data.focusAreas.filter(a => a !== area)
+      : [...data.focusAreas, area];
+    onChange({ focusAreas: areas });
+  };
+
+  return (
+    <div className="space-y-6">
       <div>
-        <label className="text-sm font-medium text-gray-300 mb-2 block">Quarter</label>
-        <select
-          value={filters.quarter || ''}
-          onChange={(e) => onFiltersChange({ 
-            ...filters, 
-            quarter: e.target.value ? parseInt(e.target.value) : undefined 
-          })}
-          className="w-full rounded border-gray-600 bg-gray-800 text-gray-300 focus:ring-cyan-500"
-        >
-          <option value="">All quarters</option>
-          <option value="1">Q1 (Jan-Mar)</option>
-          <option value="2">Q2 (Apr-Jun)</option>
-          <option value="3">Q3 (Jul-Sep)</option>
-          <option value="4">Q4 (Oct-Dec)</option>
-        </select>
+        <h2 className="text-2xl font-bold text-white mb-1">What are you focused on?</h2>
+        <p className="text-gray-400">Select all areas that matter to you. We&apos;ll match conferences to your interests.</p>
+      </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+        {FOCUS_AREAS.map(area => (
+          <button
+            key={area}
+            onClick={() => toggle(area)}
+            className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 border ${
+              data.focusAreas.includes(area)
+                ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300 shadow-lg shadow-cyan-500/10'
+                : 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20 hover:bg-white/10'
+            }`}
+          >
+            {data.focusAreas.includes(area) && '✓ '}{area}
+          </button>
+        ))}
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-1">Other interests</label>
+        <input
+          type="text"
+          value={data.otherInterests}
+          onChange={e => onChange({ otherInterests: e.target.value })}
+          placeholder="e.g. quantum computing, biotech, space tech (comma separated)"
+          className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent"
+        />
+      </div>
+    </div>
+  );
+}
+
+function StepGoals({ data, onChange }: { data: FormData; onChange: (d: Partial<FormData>) => void }) {
+  const toggle = (goal: string) => {
+    const goals = data.goals.includes(goal)
+      ? data.goals.filter(g => g !== goal)
+      : [...data.goals, goal];
+    onChange({ goals });
+  };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-1">What do you want to achieve?</h2>
+        <p className="text-gray-400">Your goals help us prioritize the right types of conferences.</p>
+      </div>
+      <div className="grid grid-cols-2 gap-3">
+        {GOALS.map(goal => {
+          const icons: Record<string, string> = {
+            'Fundraising': '💰', 'Partnerships': '🤝', 'Hiring': '👥', 'Learning': '📚',
+            'Networking': '🌐', 'Speaking opportunities': '🎤', 'Product feedback': '💬', 'Market research': '📊',
+          };
+          return (
+            <button
+              key={goal}
+              onClick={() => toggle(goal)}
+              className={`px-4 py-4 rounded-lg text-sm font-medium transition-all duration-200 border text-left ${
+                data.goals.includes(goal)
+                  ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300 shadow-lg shadow-cyan-500/10'
+                  : 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20 hover:bg-white/10'
+              }`}
+            >
+              <span className="text-lg mr-2">{icons[goal]}</span>
+              {goal}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function StepPreferences({ data, onChange }: { data: FormData; onChange: (d: Partial<FormData>) => void }) {
+  const toggleRegion = (region: string) => {
+    const regions = data.regions.includes(region)
+      ? data.regions.filter(r => r !== region)
+      : [...data.regions, region];
+    onChange({ regions });
+  };
+
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-1">Your preferences</h2>
+        <p className="text-gray-400">Help us filter for conferences that fit your constraints.</p>
       </div>
       
+      {/* Budget */}
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-2">
+          Budget per conference: <span className="text-cyan-400 font-bold">${data.budget.toLocaleString()}</span>
+        </label>
+        <input
+          type="range"
+          min={0}
+          max={5000}
+          step={100}
+          value={data.budget}
+          onChange={e => onChange({ budget: parseInt(e.target.value) })}
+          className="w-full accent-cyan-500"
+        />
+        <div className="flex justify-between text-xs text-gray-500 mt-1">
+          <span>$0 (Free only)</span>
+          <span>$5,000+</span>
+        </div>
+      </div>
+
       {/* Regions */}
       <div>
-        <label className="text-sm font-medium text-gray-300 mb-2 block">Regions</label>
-        <div className="space-y-2">
-          {userProfile.preferred_regions.map((region) => (
-            <label key={region} className="flex items-center">
-              <input
-                type="checkbox"
-                checked={filters.regions?.includes(region) ?? true}
-                onChange={(e) => {
-                  const newRegions = e.target.checked
-                    ? [...(filters.regions || []), region]
-                    : (filters.regions || []).filter(r => r !== region);
-                  onFiltersChange({ ...filters, regions: newRegions });
-                }}
-                className="rounded border-gray-600 bg-gray-800 text-cyan-500 focus:ring-cyan-500"
-              />
-              <span className="ml-2 text-sm text-gray-300">{region}</span>
-            </label>
+        <label className="block text-sm font-medium text-gray-300 mb-2">Preferred regions</label>
+        <div className="flex flex-wrap gap-2">
+          {REGIONS.map(region => (
+            <button
+              key={region}
+              onClick={() => toggleRegion(region)}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${
+                data.regions.includes(region)
+                  ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300'
+                  : 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20'
+              }`}
+            >
+              {region}
+            </button>
           ))}
         </div>
+      </div>
+
+      {/* Date range */}
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-2">Time horizon</label>
+        <div className="flex gap-3">
+          {DATE_RANGES.map(dr => (
+            <button
+              key={dr.value}
+              onClick={() => onChange({ dateRange: dr.value })}
+              className={`flex-1 px-4 py-3 rounded-lg text-sm font-medium transition-all border ${
+                data.dateRange === dr.value
+                  ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300'
+                  : 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20'
+              }`}
+            >
+              {dr.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Travel willingness */}
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-2">Travel willingness</label>
+        <div className="flex gap-3">
+          {['Local only', 'Regional', 'International', 'Anywhere'].map(level => (
+            <button
+              key={level}
+              onClick={() => onChange({ maxTravel: level })}
+              className={`flex-1 px-3 py-3 rounded-lg text-sm font-medium transition-all border ${
+                data.maxTravel === level
+                  ? 'bg-cyan-500/20 border-cyan-500/50 text-cyan-300'
+                  : 'bg-white/5 border-white/10 text-gray-400 hover:border-white/20'
+              }`}
+            >
+              {level}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function StepTargets({ data, onChange }: { data: FormData; onChange: (d: Partial<FormData>) => void }) {
+  return (
+    <div className="space-y-6">
+      <div>
+        <h2 className="text-2xl font-bold text-white mb-1">Who do you want to meet?</h2>
+        <p className="text-gray-400">Optional — list specific people or companies you want to connect with.</p>
+      </div>
+      <div>
+        <label className="block text-sm font-medium text-gray-300 mb-1">
+          Target speakers & organizations
+        </label>
+        <textarea
+          value={data.targetPeopleOrgs}
+          onChange={e => onChange({ targetPeopleOrgs: e.target.value })}
+          rows={6}
+          placeholder={`One per line, e.g.:\nJensen Huang\nSam Altman\nNVIDIA\nOpenAI\nSequoia Capital`}
+          className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-transparent resize-none"
+        />
+        <p className="text-xs text-gray-500 mt-1">
+          We&apos;ll match these against 155 confirmed speakers across 300 conferences.
+        </p>
       </div>
     </div>
   );
 }
 
 export default function RecommendationsPage() {
-  const [filters, setFilters] = useState<RecommendationFilters>({});
-  
-  const recommendations = useMemo(() => getRecommendationsByTier(filters), [filters]);
-  const summary = useMemo(() => getRecommendationsSummary(filters), [filters]);
-  
+  const router = useRouter();
+  const [step, setStep] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState<FormData>({
+    name: '',
+    company: '',
+    role: '',
+    location: '',
+    focusAreas: [],
+    otherInterests: '',
+    goals: [],
+    budget: 2000,
+    regions: [],
+    dateRange: 12,
+    maxTravel: 'International',
+    targetPeopleOrgs: '',
+  });
+
+  const update = (partial: Partial<FormData>) => setData(prev => ({ ...prev, ...partial }));
+
+  const canProceed = () => {
+    if (step === 0) return data.name.trim().length > 0;
+    if (step === 1) return data.focusAreas.length > 0;
+    if (step === 2) return data.goals.length > 0;
+    return true;
+  };
+
+  const handleSubmit = async () => {
+    setLoading(true);
+    try {
+      const res = await fetch('/api/recommendations', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const result = await res.json();
+      
+      // Store in localStorage for the results page
+      localStorage.setItem(`analysis-${result.code}`, JSON.stringify(result.analysis));
+      
+      // Navigate to processing page
+      router.push(`/recommendations/${result.code}/processing`);
+    } catch (err) {
+      console.error('Failed to submit:', err);
+      setLoading(false);
+    }
+  };
+
+  const stepComponents = [
+    <StepAboutYou key="about" data={data} onChange={update} />,
+    <StepFocusAreas key="focus" data={data} onChange={update} />,
+    <StepGoals key="goals" data={data} onChange={update} />,
+    <StepPreferences key="prefs" data={data} onChange={update} />,
+    <StepTargets key="targets" data={data} onChange={update} />,
+  ];
+
   return (
     <div className="min-h-screen bg-[#0a0a14]">
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+      <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6">
         {/* Header */}
-        <div className="mb-8">
+        <div className="mb-8 text-center">
+          <Link href="/" className="text-cyan-400 hover:text-cyan-300 text-sm mb-4 inline-block">
+            ← Back to conferences
+          </Link>
           <h1 className="text-3xl font-bold text-white mb-2">
-            Conference Recommendations for {userProfile.name}
+            Find Your Perfect Conferences
           </h1>
           <p className="text-gray-400">
-            Personalized conference recommendations based on your focus areas, goals, and preferences
+            Answer a few questions and we&apos;ll analyze 300+ AI conferences to find the best matches for you.
           </p>
         </div>
-        
-        {/* Strategy Summary */}
-        <div className="mb-8 p-6 rounded-xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20">
-          <h2 className="text-xl font-semibold text-white mb-4">📊 Your Conference Strategy</h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-red-400">{summary.mustAttendCount}</div>
-              <div className="text-sm text-gray-400">Must-Attend</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-amber-400">{summary.considerCount}</div>
-              <div className="text-sm text-gray-400">Consider</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-400">${summary.estimatedCost.toLocaleString()}</div>
-              <div className="text-sm text-gray-400">Est. Budget</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-400">{summary.regionsCount}</div>
-              <div className="text-sm text-gray-400">Regions</div>
-            </div>
+
+        {/* Progress */}
+        <ProgressBar step={step} total={STEPS.length} />
+
+        {/* Form card */}
+        <div className="rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-sm p-6 sm:p-8">
+          {stepComponents[step]}
+
+          {/* Navigation */}
+          <div className="flex justify-between mt-8 pt-6 border-t border-white/10">
+            <button
+              onClick={() => setStep(s => s - 1)}
+              disabled={step === 0}
+              className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+                step === 0
+                  ? 'text-gray-600 cursor-not-allowed'
+                  : 'text-gray-300 hover:text-white hover:bg-white/10'
+              }`}
+            >
+              ← Back
+            </button>
+
+            {step < STEPS.length - 1 ? (
+              <button
+                onClick={() => setStep(s => s + 1)}
+                disabled={!canProceed()}
+                className={`px-6 py-3 rounded-lg text-sm font-medium transition-all ${
+                  canProceed()
+                    ? 'bg-cyan-500 text-white hover:bg-cyan-400 shadow-lg shadow-cyan-500/25'
+                    : 'bg-gray-700 text-gray-500 cursor-not-allowed'
+                }`}
+              >
+                Continue →
+              </button>
+            ) : (
+              <button
+                onClick={handleSubmit}
+                disabled={loading}
+                className="px-8 py-3 rounded-lg text-sm font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:from-cyan-400 hover:to-blue-400 shadow-lg shadow-cyan-500/25 transition-all disabled:opacity-50"
+              >
+                {loading ? (
+                  <span className="flex items-center gap-2">
+                    <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                    </svg>
+                    Analyzing...
+                  </span>
+                ) : '🔍 Analyze Conferences'}
+              </button>
+            )}
           </div>
         </div>
-        
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Sidebar */}
-          <div className="lg:w-64 flex-shrink-0">
-            <div className="sticky top-24">
-              <FilterSidebar filters={filters} onFiltersChange={setFilters} />
-            </div>
-          </div>
-          
-          {/* Main content */}
-          <div className="flex-1">
-            {/* Travel Planner */}
-            <TravelPlanner recommendations={[...recommendations['must-attend'], ...recommendations.consider]} />
-            
-            {/* Must-attend */}
-            {recommendations['must-attend'].length > 0 && (
-              <div className="mb-12">
-                <h2 className="text-2xl font-bold text-red-400 mb-6 flex items-center gap-2">
-                  🔴 Must-Attend Conferences
-                  <span className="text-sm text-gray-500 font-normal">
-                    ({recommendations['must-attend'].length})
-                  </span>
-                </h2>
-                <div className="grid gap-6">
-                  {recommendations['must-attend'].map((rec) => (
-                    <ConferenceCard key={rec.conference.id} recommendation={rec} />
-                  ))}
-                </div>
-              </div>
-            )}
-            
-            {/* Consider */}
-            {recommendations.consider.length > 0 && (
-              <div className="mb-12">
-                <h2 className="text-2xl font-bold text-amber-400 mb-6 flex items-center gap-2">
-                  🟡 Worth Considering
-                  <span className="text-sm text-gray-500 font-normal">
-                    ({recommendations.consider.length})
-                  </span>
-                </h2>
-                <div className="grid gap-6">
-                  {recommendations.consider.map((rec) => (
-                    <ConferenceCard key={rec.conference.id} recommendation={rec} />
-                  ))}
-                </div>
-              </div>
-            )}
-            
-            {/* Empty state */}
-            {recommendations['must-attend'].length === 0 && recommendations.consider.length === 0 && (
-              <div className="text-center py-12">
-                <div className="text-6xl mb-4">🔍</div>
-                <h3 className="text-xl font-semibold text-white mb-2">No recommendations found</h3>
-                <p className="text-gray-400">Try adjusting your filters to see more conferences.</p>
-              </div>
-            )}
-          </div>
+
+        {/* Demo CTA */}
+        <div className="mt-8 text-center">
+          <p className="text-gray-500 text-sm">
+            Want to see an example first?{' '}
+            <Link href="/recommendations/demo" className="text-cyan-400 hover:text-cyan-300 underline">
+              View demo analysis
+            </Link>
+          </p>
         </div>
       </div>
     </div>
