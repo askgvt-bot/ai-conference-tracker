@@ -1,4 +1,4 @@
-import { getConferences, getConference, getFlag, formatDateRange, getRegion, getSpeaker } from "@/lib/data";
+import { getConferences, getConference, getFlag, formatDateRange, getRegion, getSpeaker, type Conference } from "@/lib/data";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
@@ -86,6 +86,12 @@ export default async function ConferencePage({ params }: { params: Promise<{ id:
             <p><span className="text-gray-500">Location:</span> <span className="text-white">{getFlag(c.location.country)} {c.location.city}, {c.location.country}</span></p>
             <p><span className="text-gray-500">Venue:</span> <span className="text-white">{c.location.venue}</span></p>
             <p><span className="text-gray-500">Type:</span> <span className="text-white capitalize">{c.type}</span></p>
+            {c.vertical && c.vertical.filter(v => v !== 'general').length > 0 && (
+              <p><span className="text-gray-500">Vertical:</span> <span className="text-white">{c.vertical.filter(v => v !== 'general').map(v => {
+                const labels: Record<string, string> = { "creator-economy": "Creator Economy", "ai-ml": "AI / ML", "enterprise": "Enterprise", "robotics": "Robotics", "healthcare": "Healthcare", "fintech": "Fintech" };
+                return labels[v] || v;
+              }).join(', ')}</span></p>
+            )}
             <p><span className="text-gray-500">Size:</span> <span className="text-white capitalize">{c.size} (~{c.estimated_attendees.toLocaleString()} attendees)</span></p>
             <p><span className="text-gray-500">Price:</span> <span className="text-white">{c.ticket_price.range}</span></p>
             {c.ticket_price.note && <p className="text-gray-500 text-xs">{c.ticket_price.note}</p>}

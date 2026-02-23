@@ -33,6 +33,34 @@ function TypeBadge({ type }: { type: string }) {
   );
 }
 
+const VERTICAL_COLORS: Record<string, string> = {
+  "creator-economy": "bg-pink-500/20 text-pink-300 border-pink-500/30",
+  "ai-ml": "bg-cyan-500/20 text-cyan-300 border-cyan-500/30",
+  "enterprise": "bg-blue-500/20 text-blue-300 border-blue-500/30",
+  "robotics": "bg-orange-500/20 text-orange-300 border-orange-500/30",
+  "healthcare": "bg-green-500/20 text-green-300 border-green-500/30",
+  "fintech": "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
+  "general": "bg-zinc-500/20 text-zinc-300 border-zinc-500/30",
+};
+
+const VERTICAL_LABELS: Record<string, string> = {
+  "creator-economy": "Creator Economy",
+  "ai-ml": "AI / ML",
+  "enterprise": "Enterprise",
+  "robotics": "Robotics",
+  "healthcare": "Healthcare",
+  "fintech": "Fintech",
+  "general": "General",
+};
+
+function VerticalBadge({ vertical }: { vertical: string }) {
+  return (
+    <span className={`px-2 py-0.5 rounded text-xs border ${VERTICAL_COLORS[vertical] || VERTICAL_COLORS.general}`}>
+      {VERTICAL_LABELS[vertical] || vertical}
+    </span>
+  );
+}
+
 function SizeDots({ size }: { size: string }) {
   const count = size === "mega" ? 4 : size === "large" ? 3 : size === "medium" ? 2 : 1;
   return (
@@ -47,6 +75,7 @@ function SizeDots({ size }: { size: string }) {
 
 const REGIONS = ["All", "North America", "Europe", "Asia", "Middle East", "Oceania", "South America"];
 const TYPES = ["All", "Academic", "Industry", "Technical", "Executive", "Government"];
+const VERTICALS = ["All", "creator-economy", "ai-ml", "enterprise", "robotics", "healthcare", "fintech", "general"];
 const SIZES = ["All", "Small", "Medium", "Large", "Mega"];
 const PRICES = ["All", "Free", "<$500", "$500-2000", "$2000+"];
 const SORTS = ["Score", "Date", "Name", "Size"];
@@ -63,6 +92,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState("All");
   const [type, setType] = useState("All");
+  const [vertical, setVertical] = useState("All");
   const [size, setSize] = useState("All");
   const [month, setMonth] = useState("All");
   const [price, setPrice] = useState("All");
@@ -87,6 +117,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
     }
     if (region !== "All") result = result.filter((c) => getRegion(c.location.country) === region);
     if (type !== "All") result = result.filter((c) => c.type.toLowerCase() === type.toLowerCase());
+    if (vertical !== "All") result = result.filter((c) => c.vertical?.includes(vertical));
     if (size !== "All") result = result.filter((c) => c.size.toLowerCase() === size.toLowerCase());
     if (month !== "All") result = result.filter((c) => c.dates.start.startsWith(month));
     if (price !== "All") result = result.filter((c) => getPriceCategory(c.ticket_price.range) === price);
@@ -100,20 +131,21 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
       return 0;
     });
     return result;
-  }, [conferences, search, region, type, size, month, price, sort, showPast, today, sizeOrder]);
+  }, [conferences, search, region, type, vertical, size, month, price, sort, showPast, today, sizeOrder]);
 
   const activeFilters = useMemo(() => {
     const f: { label: string; clear: () => void }[] = [];
     if (region !== "All") f.push({ label: `Region: ${region}`, clear: () => setRegion("All") });
     if (type !== "All") f.push({ label: `Type: ${type}`, clear: () => setType("All") });
+    if (vertical !== "All") f.push({ label: `Vertical: ${VERTICAL_LABELS[vertical] || vertical}`, clear: () => setVertical("All") });
     if (size !== "All") f.push({ label: `Size: ${size}`, clear: () => setSize("All") });
     if (month !== "All") { const m = MONTHS.find((x) => x.value === month); f.push({ label: `Month: ${m?.label}`, clear: () => setMonth("All") }); }
     if (price !== "All") f.push({ label: `Price: ${price}`, clear: () => setPrice("All") });
     return f;
-  }, [region, type, size, month, price]);
+  }, [region, type, vertical, size, month, price]);
 
   const clearAll = useCallback(() => {
-    setSearch(""); setRegion("All"); setType("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date"); setShowPast(false);
+    setSearch(""); setRegion("All"); setType("All"); setVertical("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date"); setShowPast(false);
   }, []);
 
   return (
@@ -134,6 +166,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
       <div className="flex flex-wrap gap-3 mb-4">
         <Select label="Region" value={region} options={REGIONS} onChange={setRegion} />
         <Select label="Type" value={type} options={TYPES} onChange={setType} />
+        <VerticalSelect value={vertical} onChange={setVertical} />
         <Select label="Size" value={size} options={SIZES} onChange={setSize} />
         <Select label="Price" value={price} options={PRICES} onChange={setPrice} />
         <Select label="Sort" value={sort} options={SORTS} onChange={setSort} />
@@ -197,6 +230,9 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
               </p>
               <div className="flex items-center gap-2 mb-3 flex-wrap">
                 <TypeBadge type={c.type} />
+                {c.vertical?.filter(v => v !== 'general').map((v) => (
+                  <VerticalBadge key={v} vertical={v} />
+                ))}
                 <SizeDots size={c.size} />
               </div>
               <div className="flex flex-wrap gap-1 mb-3">
@@ -225,6 +261,23 @@ function Select({ label, value, options, onChange }: { label: string; value: str
     >
       {options.map((o) => (
         <option key={o} value={o} className="bg-[#0a0a14] text-gray-300">{label}: {o}</option>
+      ))}
+    </select>
+  );
+}
+
+function VerticalSelect({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  return (
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      aria-label="Vertical"
+      className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-gray-300 focus:outline-none focus:ring-2 focus:ring-cyan-500/50 appearance-none cursor-pointer hover:border-white/20 transition-all"
+    >
+      {VERTICALS.map((v) => (
+        <option key={v} value={v} className="bg-[#0a0a14] text-gray-300">
+          Vertical: {v === "All" ? "All" : VERTICAL_LABELS[v] || v}
+        </option>
       ))}
     </select>
   );

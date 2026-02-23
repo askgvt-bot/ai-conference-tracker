@@ -30,6 +30,7 @@ export interface Conference {
   location: { city: string; country: string; venue: string; note?: string };
   type: string;
   focus_areas: string[];
+  vertical?: string[];
   size: string;
   estimated_attendees: number;
   website: string;
@@ -47,8 +48,24 @@ export interface Conference {
   };
 }
 
+function inferVertical(conf: Conference): string[] {
+  if (conf.vertical && conf.vertical.length > 0) return conf.vertical;
+  const combined = [...conf.focus_areas, ...conf.tags, conf.name].join(' ').toLowerCase();
+  const verticals: string[] = [];
+  if (/creator|influencer|vidcon|twitchcon|mcn|content creator|youtube creator|tiktok creator/.test(combined)) verticals.push('creator-economy');
+  if (/\bai\b|machine learning|deep learning|llm|neural|nlp|computer vision/.test(combined)) verticals.push('ai-ml');
+  if (/enterprise|saas|cloud|digital transformation/.test(combined)) verticals.push('enterprise');
+  if (/robot|automation/.test(combined)) verticals.push('robotics');
+  if (/health|medical|biotech/.test(combined)) verticals.push('healthcare');
+  if (/fintech|banking|financial/.test(combined)) verticals.push('fintech');
+  return verticals.length > 0 ? verticals : ['general'];
+}
+
 export function getConferences(): Conference[] {
-  return conferencesData.conferences as Conference[];
+  return (conferencesData.conferences as Conference[]).map(c => ({
+    ...c,
+    vertical: inferVertical(c),
+  }));
 }
 
 export function getConference(id: string): Conference | undefined {

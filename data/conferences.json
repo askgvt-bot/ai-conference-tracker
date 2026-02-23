@@ -2,7 +2,7 @@
   "generated": "2026-02-16",
   "research_methodology": "Deep systematic search across 5 tiers",
   "search_queries_executed": 50,
-  "total_conferences": 300,
+  "total_conferences": 403,
   "conferences": [
     {
       "id": "nvidia-gtc-2026",
@@ -2666,7 +2666,7 @@
       "estimated_attendees": 10000,
       "website": "https://www.worldaicannes.com/",
       "ticket_price": {
-        "range": "FREE-\u20ac1600"
+        "range": "FREE-€1600"
       },
       "description": "Dynamic gathering of global AI community with awards ceremony.",
       "tags": [
@@ -2714,7 +2714,7 @@
       "estimated_attendees": 25000,
       "website": "https://www.aiweek.it/en/",
       "ticket_price": {
-        "range": "\u20ac397-\u20ac1599"
+        "range": "€397-€1599"
       },
       "description": "Europe's largest AI event with immersive format and specialized tracks.",
       "tags": [
@@ -2803,7 +2803,7 @@
       "estimated_attendees": 9000,
       "website": "https://www.raisesummit.com/",
       "ticket_price": {
-        "range": "\u20ac999-\u20ac4599"
+        "range": "€999-€4599"
       },
       "description": "Europe's most influential AI event with 80% C-level executives.",
       "tags": [
@@ -3105,7 +3105,7 @@
       "estimated_attendees": 8000,
       "website": "https://www.ai-expo.net/global/",
       "ticket_price": {
-        "range": "FREE-\u00a3899"
+        "range": "FREE-£899"
       },
       "description": "Part of TechEx Global series showcasing generative AI, enterprise AI, and ML applications.",
       "tags": [
@@ -3458,7 +3458,7 @@
       "estimated_attendees": 1000,
       "website": "https://www.ai.lt/",
       "ticket_price": {
-        "range": "\u20ac840-\u20ac6400"
+        "range": "€840-€6400"
       },
       "description": "Platform for Baltic region bringing together leaders, innovators, and policymakers.",
       "tags": [
@@ -3507,7 +3507,7 @@
       "estimated_attendees": 1000,
       "website": "https://aisummiteurope.eu/",
       "ticket_price": {
-        "range": "\u20ac390-\u20ac885"
+        "range": "€390-€885"
       },
       "description": "Platform for learning, collaboration, and exploring latest AI trends in Europe.",
       "tags": [
@@ -3557,7 +3557,7 @@
       "estimated_attendees": 2500,
       "website": "https://mlconference.ai/munich/",
       "ticket_price": {
-        "range": "\u20ac721-\u20ac2299"
+        "range": "€721-€2299"
       },
       "description": "Europe's leading ML conference with structured 5-day program including bootcamp.",
       "tags": [
@@ -3599,7 +3599,7 @@
       "estimated_attendees": 2500,
       "website": "https://www.humanx.co/europe",
       "ticket_price": {
-        "range": "\u20ac2499"
+        "range": "€2499"
       },
       "description": "European edition focused on actionable AI strategies and structured networking.",
       "tags": [
@@ -3699,7 +3699,7 @@
       "estimated_attendees": 10000,
       "website": "https://worldsummit.ai/",
       "ticket_price": {
-        "range": "\u20ac1499-\u20ac1899"
+        "range": "€1499-€1899"
       },
       "description": "10th anniversary of influential global AI event with theme 'Guardians of Tomorrow'.",
       "tags": [
@@ -7807,7 +7807,7 @@
       "location": {
         "city": "Mexico City",
         "country": "Mexico",
-        "venue": "Universidad Nacional Aut\u00f3noma de M\u00e9xico (UNAM)"
+        "venue": "Universidad Nacional Autónoma de México (UNAM)"
       },
       "type": "academic",
       "focus_areas": [
@@ -7851,7 +7851,7 @@
         "end": "2026-08-14"
       },
       "location": {
-        "city": "S\u00e3o Paulo",
+        "city": "São Paulo",
         "country": "Brazil",
         "venue": "Expo Center Norte"
       },
@@ -8075,9 +8075,9 @@
         "end": "2026-10-22"
       },
       "location": {
-        "city": "S\u00e3o Paulo",
+        "city": "São Paulo",
         "country": "Brazil",
-        "venue": "Centro de Conven\u00e7\u00f5es Frei Caneca"
+        "venue": "Centro de Convenções Frei Caneca"
       },
       "type": "industry",
       "focus_areas": [
@@ -8120,7 +8120,7 @@
         "end": "2026-07-17"
       },
       "location": {
-        "city": "Bogot\u00e1",
+        "city": "Bogotá",
         "country": "Colombia",
         "venue": "Universidad de los Andes"
       },
@@ -8167,7 +8167,7 @@
       "location": {
         "city": "Santiago",
         "country": "Chile",
-        "venue": "Pontificia Universidad Cat\u00f3lica de Chile"
+        "venue": "Pontificia Universidad Católica de Chile"
       },
       "type": "industry",
       "focus_areas": [
@@ -8257,12 +8257,12 @@
       "location": {
         "city": "Quito",
         "country": "Ecuador",
-        "venue": "Pontificia Universidad Cat\u00f3lica del Ecuador"
+        "venue": "Pontificia Universidad Católica del Ecuador"
       },
       "type": "academic",
       "focus_areas": [
         "biodiversity AI",
-        "Gal\u00e1pagos conservation",
+        "Galápagos conservation",
         "oil industry AI",
         "indigenous languages",
         "sustainable development"
@@ -8274,7 +8274,7 @@
         "range": "$150-$300",
         "student_discount": true
       },
-      "description": "Symposium focusing on AI for biodiversity conservation, particularly Gal\u00e1pagos ecosystems, and sustainable resource management.",
+      "description": "Symposium focusing on AI for biodiversity conservation, particularly Galápagos ecosystems, and sustainable resource management.",
       "tags": [
         "academic",
         "biodiversity-AI",
@@ -8302,7 +8302,7 @@
       "location": {
         "city": "Montevideo",
         "country": "Uruguay",
-        "venue": "Universidad de la Rep\u00fablica"
+        "venue": "Universidad de la República"
       },
       "type": "academic",
       "focus_areas": [
@@ -8390,7 +8390,7 @@
         "end": "2026-03-12"
       },
       "location": {
-        "city": "San Jos\u00e9",
+        "city": "San José",
         "country": "Costa Rica",
         "venue": "Universidad de Costa Rica"
       },
@@ -8527,7 +8527,7 @@
       "location": {
         "city": "Santo Domingo",
         "country": "Dominican Republic",
-        "venue": "Universidad Aut\u00f3noma de Santo Domingo"
+        "venue": "Universidad Autónoma de Santo Domingo"
       },
       "type": "industry",
       "focus_areas": [
@@ -8662,7 +8662,7 @@
       "location": {
         "city": "La Paz",
         "country": "Bolivia",
-        "venue": "Universidad Mayor de San Andr\u00e9s"
+        "venue": "Universidad Mayor de San Andrés"
       },
       "type": "industry",
       "focus_areas": [
@@ -9796,7 +9796,7 @@
         "automotive AI",
         "telecommunications",
         "regional collaboration",
-        "Visegr\u00e1d Group initiatives"
+        "Visegrád Group initiatives"
       ],
       "size": "medium",
       "estimated_attendees": 500,
@@ -9805,13 +9805,13 @@
         "range": "$400-$700",
         "note": "Focus on automotive and telecom"
       },
-      "description": "Summit exploring Hungary's AI innovations in automotive, telecommunications, and cross-border Visegr\u00e1d Group collaboration.",
+      "description": "Summit exploring Hungary's AI innovations in automotive, telecommunications, and cross-border Visegrád Group collaboration.",
       "tags": [
         "industry",
         "Hungarian",
         "automotive-AI",
         "telecommunications",
-        "Visegr\u00e1d"
+        "Visegrád"
       ],
       "speakers": [],
       "score": 78,
@@ -10201,7 +10201,7 @@
         "automotive AI",
         "Slovak language processing",
         "shared services AI",
-        "Visegr\u00e1d cooperation"
+        "Visegrád cooperation"
       ],
       "size": "medium",
       "estimated_attendees": 350,
@@ -10282,7 +10282,7 @@
         "end": "2026-07-08"
       },
       "location": {
-        "city": "Chi\u0219in\u0103u",
+        "city": "Chișinău",
         "country": "Moldova",
         "venue": "Technical University of Moldova"
       },
@@ -12587,7 +12587,7 @@
       "location": {
         "city": "Montreal",
         "country": "Canada",
-        "venue": "Palais des congr\u00e8s de Montr\u00e9al"
+        "venue": "Palais des congrès de Montréal"
       },
       "type": "academic",
       "focus_areas": [
@@ -12951,7 +12951,7 @@
       "location": {
         "city": "Brussels",
         "country": "Belgium",
-        "venue": "Universit\u00e9 libre de Bruxelles"
+        "venue": "Université libre de Bruxelles"
       },
       "type": "academic",
       "focus_areas": [
@@ -14071,6 +14071,4787 @@
         "relevance": 20,
         "networking": 10,
         "track_record": 11
+      }
+    },
+    {
+      "id": "affiliate-summit-west-2026",
+      "name": "Affiliate Summit West 2026",
+      "dates": {
+        "start": "2026-01-12",
+        "end": "2026-01-14"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "Caesars Forum"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "affiliate marketing",
+        "performance marketing",
+        "creator monetization"
+      ],
+      "vertical": [
+        "affiliate-marketing",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 7000,
+      "website": "https://www.affiliatesummit.com",
+      "ticket_price": {
+        "range": "$599-$1,999",
+        "note": "Various pass tiers"
+      },
+      "description": "Premier affiliate and performance marketing conference. Increasingly relevant for creator monetization and influencer affiliate programs.",
+      "tags": [
+        "affiliate",
+        "performance-marketing",
+        "ecommerce",
+        "creator-monetization"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creator-economy-live-west-2026",
+      "name": "Creator Economy Live West",
+      "dates": {
+        "start": "2026-01-13",
+        "end": "2026-01-14"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "Caesars Forum"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "creator economy",
+        "influencer marketing",
+        "brand partnerships",
+        "creator tools"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 2000,
+      "website": "https://www.creatoreconomylive.com",
+      "ticket_price": {
+        "range": "$499-$1,499",
+        "note": "Multiple tiers"
+      },
+      "description": "Dedicated creator economy conference bringing together brands, agencies, and creators. Strong focus on influencer marketing ROI and strategy.",
+      "tags": [
+        "creator-economy",
+        "influencer-marketing",
+        "brand-partnerships"
+      ],
+      "speakers": [],
+      "score": 90,
+      "score_breakdown": {
+        "speakers": 30,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "podfest-expo-2026",
+      "name": "Podfest Expo 2026",
+      "dates": {
+        "start": "2026-01-22",
+        "end": "2026-01-25"
+      },
+      "location": {
+        "city": "Orlando",
+        "country": "USA",
+        "venue": "Orlando Convention Center area"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "podcasting",
+        "audio creation",
+        "content monetization"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1500,
+      "website": "https://podfestexpo.com",
+      "ticket_price": {
+        "range": "$197-$497",
+        "note": "Various tiers"
+      },
+      "description": "Longest-running annual in-person podcasting conference. 12th consecutive year in 2026. Great for podcast creators at all levels.",
+      "tags": [
+        "podcast",
+        "audio",
+        "creator",
+        "content-creation"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "african-creators-summit-2026",
+      "name": "African Creators Summit 3.0",
+      "dates": {
+        "start": "2026-01-29",
+        "end": "2026-01-29"
+      },
+      "location": {
+        "city": "Lagos",
+        "country": "Nigeria",
+        "venue": "TBD"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "African creator economy",
+        "digital content",
+        "creator investment"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://www.comicpanelworld.com/african-creators-summit-2026-spotlighting-the-future-of-africas-creative-economy/",
+      "ticket_price": {
+        "range": "TBD",
+        "note": "Application-based"
+      },
+      "description": "Key platform for advancing Africa's creator economy. Brings together creators, investors, policymakers, and industry leaders.",
+      "tags": [
+        "africa",
+        "creator-economy",
+        "investment",
+        "digital-content"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 15,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "nrb-convention-2026",
+      "name": "NRB International Christian Media Convention",
+      "dates": {
+        "start": "2026-02-17",
+        "end": "2026-02-20"
+      },
+      "location": {
+        "city": "Nashville",
+        "country": "USA",
+        "venue": "Gaylord Opryland"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "faith-based media",
+        "broadcasting",
+        "digital content"
+      ],
+      "vertical": [
+        "media",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3000,
+      "website": "https://nrbconvention.org",
+      "ticket_price": {
+        "range": "$200-$800",
+        "note": "Varies by tier"
+      },
+      "description": "One of the biggest rooms for faith-based media, broadcasting, and digital content teams.",
+      "tags": [
+        "faith",
+        "media",
+        "broadcasting",
+        "digital-content"
+      ],
+      "speakers": [],
+      "score": 65,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 15,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "ana-creator-marketing-2026",
+      "name": "ANA Creator Marketing Conference",
+      "dates": {
+        "start": "2026-02-23",
+        "end": "2026-02-25"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "TBD"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "creator marketing",
+        "influencer strategy",
+        "brand partnerships"
+      ],
+      "vertical": [
+        "creator-economy",
+        "influencer-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 800,
+      "website": "https://www.ana.net/content/show/id/ms-infl-feb26",
+      "ticket_price": {
+        "range": "$0-$1,999",
+        "note": "Membership and tier dependent"
+      },
+      "description": "Brand-side creator marketing conference. In the room with brand decision makers. ANA is the Association of National Advertisers.",
+      "tags": [
+        "brand-marketing",
+        "creator-marketing",
+        "influencer-strategy"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "social-media-strategies-summit-virtual-feb-2026",
+      "name": "Social Media Strategies Summit (Virtual)",
+      "dates": {
+        "start": "2026-02-24",
+        "end": "2026-02-26"
+      },
+      "location": {
+        "city": "Virtual",
+        "country": "Online",
+        "venue": "Virtual"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social strategy",
+        "content ops",
+        "AI",
+        "enterprise workflows"
+      ],
+      "vertical": [
+        "social-media"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://socialmediastrategiessummit.com/virtual-conference-february-2026/",
+      "ticket_price": {
+        "range": "$297-$697",
+        "note": "Virtual pass"
+      },
+      "description": "Enterprise-focused social media strategy summit. Useful for social teams at large organizations.",
+      "tags": [
+        "social-media",
+        "strategy",
+        "enterprise",
+        "virtual"
+      ],
+      "speakers": [],
+      "score": 65,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 10,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "affiliate-world-dubai-2026",
+      "name": "Affiliate World Global Dubai",
+      "dates": {
+        "start": "2026-03-04",
+        "end": "2026-03-05"
+      },
+      "location": {
+        "city": "Dubai",
+        "country": "UAE",
+        "venue": "Dubai World Trade Centre"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "affiliate marketing",
+        "ecommerce",
+        "performance marketing",
+        "creator monetization"
+      ],
+      "vertical": [
+        "affiliate-marketing",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://affiliateworldconferences.com/dubai",
+      "ticket_price": {
+        "range": "$599-$1,999",
+        "note": "Various tiers"
+      },
+      "description": "Number one affiliate marketing conference, global edition in Dubai. Covers performance marketing, ecommerce, and creator monetization.",
+      "tags": [
+        "affiliate",
+        "ecommerce",
+        "performance-marketing",
+        "dubai"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creators-summit-ipswich-2026",
+      "name": "Creators Summit Ipswich",
+      "dates": {
+        "start": "2026-03-07",
+        "end": "2026-03-07"
+      },
+      "location": {
+        "city": "Ipswich",
+        "country": "Australia",
+        "venue": "Ipswich Civic Centre"
+      },
+      "type": "community",
+      "focus_areas": [
+        "creator skills",
+        "workshops",
+        "community"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 200,
+      "website": "https://events.humanitix.com/2026-creators-summit-ipswich",
+      "ticket_price": {
+        "range": "Free-$25",
+        "note": "Often free or low-cost"
+      },
+      "description": "Smaller, local, community-driven creator event in Australia. Great for emerging creators.",
+      "tags": [
+        "community",
+        "creator",
+        "australia",
+        "workshops"
+      ],
+      "speakers": [],
+      "score": 55,
+      "score_breakdown": {
+        "speakers": 10,
+        "size": 5,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "forbes-30-50-summit-2026",
+      "name": "Forbes 30/50 Summit",
+      "dates": {
+        "start": "2026-03-08",
+        "end": "2026-03-11"
+      },
+      "location": {
+        "city": "Abu Dhabi",
+        "country": "UAE",
+        "venue": "TBD"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "leadership",
+        "mentorship",
+        "networking",
+        "entrepreneurship"
+      ],
+      "vertical": [
+        "business",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://www.forbes.com/connect/event/2026-forbes-3050-summit/",
+      "ticket_price": {
+        "range": "Invite-based",
+        "note": "Application or invite required"
+      },
+      "description": "High-level leadership and networking summit. Relevant for top creators with business operations.",
+      "tags": [
+        "leadership",
+        "networking",
+        "entrepreneurship",
+        "abu-dhabi"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 12,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "b2b-marketing-exchange-2026",
+      "name": "B2B Marketing Exchange",
+      "dates": {
+        "start": "2026-03-09",
+        "end": "2026-03-11"
+      },
+      "location": {
+        "city": "Carlsbad",
+        "country": "USA",
+        "venue": "Omni La Costa Resort"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "B2B content",
+        "demand gen",
+        "growth strategy"
+      ],
+      "vertical": [
+        "b2b-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 800,
+      "website": "https://b2bmarketing.exchange",
+      "ticket_price": {
+        "range": "$1,295-$2,495",
+        "note": "Various tiers"
+      },
+      "description": "B2B content and demand generation conference. Relevant for creators building B2B content engines.",
+      "tags": [
+        "b2b",
+        "content-marketing",
+        "demand-gen"
+      ],
+      "speakers": [],
+      "score": 60,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "ragan-social-media-2026",
+      "name": "Ragan Social Media Conference",
+      "dates": {
+        "start": "2026-03-09",
+        "end": "2026-03-11"
+      },
+      "location": {
+        "city": "Orlando",
+        "country": "USA",
+        "venue": "Walt Disney World Swan & Dolphin"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social strategy",
+        "crisis comms",
+        "video workflows",
+        "reputation"
+      ],
+      "vertical": [
+        "social-media",
+        "communications"
+      ],
+      "size": "medium",
+      "estimated_attendees": 700,
+      "website": "https://www.ragan.com/store/social-media-conference/",
+      "ticket_price": {
+        "range": "$995-$1,995",
+        "note": "Full conference pass"
+      },
+      "description": "Strong social and comms conference. Less creator gossip, more real-world platform strategy.",
+      "tags": [
+        "social-media",
+        "communications",
+        "crisis",
+        "brand"
+      ],
+      "speakers": [],
+      "score": 62,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 10,
+        "relevance": 12,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "martech-summit-singapore-2026",
+      "name": "The MarTech Summit Singapore",
+      "dates": {
+        "start": "2026-03-10",
+        "end": "2026-03-11"
+      },
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "venue": "Raffles City Convention Centre"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "marketing tech",
+        "data",
+        "AI",
+        "performance",
+        "CX"
+      ],
+      "vertical": [
+        "martech",
+        "social-media"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://themartechsummit.com/singapore/",
+      "ticket_price": {
+        "range": "SGD 499-1,299",
+        "note": "Paid tiers"
+      },
+      "description": "Marketing technology summit. Relevant if influencer marketing is tied to attribution, paid media, and campaign strategy.",
+      "tags": [
+        "martech",
+        "data",
+        "AI",
+        "performance",
+        "singapore"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "podcast-movement-evolutions-2026",
+      "name": "Podcast Movement Evolutions at SXSW",
+      "dates": {
+        "start": "2026-03-13",
+        "end": "2026-03-15"
+      },
+      "location": {
+        "city": "Austin",
+        "country": "USA",
+        "venue": "SXSW Austin"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "podcasting",
+        "audio strategy",
+        "creator growth"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 2000,
+      "website": "https://evolutions.podcastmovement.com",
+      "ticket_price": {
+        "range": "$299-$799",
+        "note": "Co-located with SXSW"
+      },
+      "description": "Podcast Movement's spring conference co-located at SXSW. Three days dedicated to podcasting conversations and industry evolution.",
+      "tags": [
+        "podcast",
+        "audio",
+        "SXSW",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 17,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "moment-conference-2026",
+      "name": "Moment Conference 2026",
+      "dates": {
+        "start": "2026-03-13",
+        "end": "2026-03-15"
+      },
+      "location": {
+        "city": "Lagos",
+        "country": "Nigeria",
+        "venue": "Landmark Event Centre"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "African creator economy",
+        "brand partnerships",
+        "digital content",
+        "creator tools"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 4000,
+      "website": "https://moment.mainstack.com",
+      "ticket_price": {
+        "range": "TBD",
+        "note": "Various tiers"
+      },
+      "description": "Africa's biggest convergence of creators. 100+ speakers, 150+ brands. Major event for the African creator ecosystem.",
+      "tags": [
+        "africa",
+        "nigeria",
+        "creator-economy",
+        "brand-partnerships"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 17,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "social-fresh-2026",
+      "name": "Social Fresh 2026",
+      "dates": {
+        "start": "2026-03-19",
+        "end": "2026-03-20"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "Tishman Auditorium, The New School"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social media strategy",
+        "video frameworks",
+        "content creation"
+      ],
+      "vertical": [
+        "social-media",
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 300,
+      "website": "https://socialfresh.com/conference/social-media-conference-2026/",
+      "ticket_price": {
+        "range": "$697-$997",
+        "note": "In-person conference"
+      },
+      "description": "Boutique social media conference in Greenwich Village. Strategy sessions, live interviews, interactive discussions.",
+      "tags": [
+        "social-media",
+        "strategy",
+        "video",
+        "new-york"
+      ],
+      "speakers": [],
+      "score": 68,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 8,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "beautycon-manila-2026",
+      "name": "BeautyCon Manila",
+      "dates": {
+        "start": "2026-03-19",
+        "end": "2026-03-22"
+      },
+      "location": {
+        "city": "Pasay City",
+        "country": "Philippines",
+        "venue": "SMX Manila"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "beauty creators",
+        "skincare",
+        "makeup",
+        "UGC"
+      ],
+      "vertical": [
+        "beauty",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://www.facebook.com/WatsonsPH",
+      "ticket_price": {
+        "range": "Free",
+        "note": "Membership-based access"
+      },
+      "description": "Beauty creator convention in the Philippines. Strong for skincare, makeup, and UGC creators in Southeast Asia.",
+      "tags": [
+        "beauty",
+        "skincare",
+        "UGC",
+        "philippines",
+        "southeast-asia"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 14,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creative-operations-summit-london-2026",
+      "name": "Creative Operations Summit London",
+      "dates": {
+        "start": "2026-03-20",
+        "end": "2026-03-20"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "Convene 155 Bishopsgate"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "creative ops",
+        "production workflows",
+        "scaling content teams"
+      ],
+      "vertical": [
+        "creative-ops"
+      ],
+      "size": "small",
+      "estimated_attendees": 300,
+      "website": "https://www.henrystewartconferences.com/creative-operations/creative-operations-summit-london-2026",
+      "ticket_price": {
+        "range": "£695-£995",
+        "note": "Single day conference"
+      },
+      "description": "How to ship content at scale without chaos. For creative ops leads, production managers, agencies.",
+      "tags": [
+        "creative-ops",
+        "production",
+        "workflows",
+        "london"
+      ],
+      "speakers": [],
+      "score": 55,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 5,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "iab-newfronts-2026",
+      "name": "2026 IAB NewFronts",
+      "dates": {
+        "start": "2026-03-23",
+        "end": "2026-03-26"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "Various NYC venues"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "digital video",
+        "creator content",
+        "advertising",
+        "platform showcases"
+      ],
+      "vertical": [
+        "digital-advertising",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3000,
+      "website": "https://www.iab.com/events/newfronts-2026/",
+      "ticket_price": {
+        "range": "Invite-only",
+        "note": "For qualified brand marketers and agency professionals"
+      },
+      "description": "IAB's digital video marketplace event. Moved to March 2026. Includes new CreatorFronts component. Major platform showcases for digital video.",
+      "tags": [
+        "digital-video",
+        "advertising",
+        "platforms",
+        "IAB"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "pax-east-2026",
+      "name": "PAX East 2026",
+      "dates": {
+        "start": "2026-03-26",
+        "end": "2026-03-29"
+      },
+      "location": {
+        "city": "Boston",
+        "country": "USA",
+        "venue": "Boston Convention and Exhibition Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "gaming",
+        "streaming",
+        "content creators",
+        "esports"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 60000,
+      "website": "https://east.paxsite.com",
+      "ticket_price": {
+        "range": "$55-$225",
+        "note": "Day pass to 4-day badge"
+      },
+      "description": "Major gaming convention with huge creator and streamer presence. Content creator panels, gaming tournaments, and community meetups.",
+      "tags": [
+        "gaming",
+        "streaming",
+        "esports",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 20,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "tv-video-insider-summit-spring-2026",
+      "name": "TV & Video Insider Summit (Spring)",
+      "dates": {
+        "start": "2026-04-06",
+        "end": "2026-04-09"
+      },
+      "location": {
+        "city": "New Orleans",
+        "country": "USA",
+        "venue": "Kimpton Hotel Fontenot"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "digital video",
+        "measurement",
+        "media strategy"
+      ],
+      "vertical": [
+        "digital-video",
+        "media"
+      ],
+      "size": "small",
+      "estimated_attendees": 300,
+      "website": "https://vendelux.com/app/event/tv-video-insider-summit-spring-2026/",
+      "ticket_price": {
+        "range": "$$$",
+        "note": "Industry invite-based"
+      },
+      "description": "Senior media people, measurement, video strategy. Industry-level influencer conference for video.",
+      "tags": [
+        "video",
+        "media",
+        "measurement",
+        "strategy"
+      ],
+      "speakers": [],
+      "score": 68,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 8,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "social-media-week-2026",
+      "name": "Social Media Week 2026",
+      "dates": {
+        "start": "2026-04-14",
+        "end": "2026-04-16"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "Metropolitan Pavilion"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social media",
+        "influencer marketing",
+        "brand building",
+        "creator collaborations"
+      ],
+      "vertical": [
+        "social-media",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3000,
+      "website": "https://event.adweek.com/smw_2026",
+      "ticket_price": {
+        "range": "$584-$1,299",
+        "note": "Adweek event"
+      },
+      "description": "Adweek's premier social media event. Covers influencer marketing, pop culture, agency strategies, and creator collaborations.",
+      "tags": [
+        "social-media",
+        "influencer",
+        "brand",
+        "marketing"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "mom-2-summit-2026",
+      "name": "Mom 2.0 Summit",
+      "dates": {
+        "start": "2026-04-16",
+        "end": "2026-04-18"
+      },
+      "location": {
+        "city": "Austin",
+        "country": "USA",
+        "venue": "JW Marriott Austin"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "parenting creators",
+        "influencer marketing",
+        "family brands"
+      ],
+      "vertical": [
+        "parenting",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 600,
+      "website": "https://registration.socio.events/e/2026mom2summit",
+      "ticket_price": {
+        "range": "$500-$1,200",
+        "note": "Full conference"
+      },
+      "description": "Brands meet creators in the parenting and family niche. Real deal-making happens here.",
+      "tags": [
+        "parenting",
+        "family",
+        "influencer-marketing",
+        "brand-deals"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 13,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "nab-show-2026",
+      "name": "NAB Show 2026",
+      "dates": {
+        "start": "2026-04-18",
+        "end": "2026-04-22"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "Las Vegas Convention Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "broadcasting",
+        "streaming",
+        "content creation",
+        "video production"
+      ],
+      "vertical": [
+        "media",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 65000,
+      "website": "https://www.nabshow.com",
+      "ticket_price": {
+        "range": "$0-$2,795",
+        "note": "Free exhibits pass to full conference"
+      },
+      "description": "Media and entertainment's flagship event. Covers next-gen workflows, AI, monetization. Includes Streaming Summit. Major for video creators and tech.",
+      "tags": [
+        "broadcasting",
+        "streaming",
+        "video-production",
+        "creator-tools"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 20,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "adobe-summit-2026",
+      "name": "Adobe Summit 2026",
+      "dates": {
+        "start": "2026-04-19",
+        "end": "2026-04-22"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "The Venetian"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital experience",
+        "marketing",
+        "creativity",
+        "AI",
+        "content creation"
+      ],
+      "vertical": [
+        "martech",
+        "creator-tools"
+      ],
+      "size": "mega",
+      "estimated_attendees": 12000,
+      "website": "https://summit.adobe.com/na/",
+      "ticket_price": {
+        "range": "$2,195-$2,295",
+        "note": "Full conference in-person pass"
+      },
+      "description": "Adobe's digital experience conference. 200+ sessions on marketing, creativity, and AI. Creator tools and content creation workflows featured heavily.",
+      "tags": [
+        "adobe",
+        "creative-tools",
+        "AI",
+        "marketing",
+        "digital-experience"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 18,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "iicon-2026",
+      "name": "IICON 2026 (Interactive Innovation Conference)",
+      "dates": {
+        "start": "2026-04-27",
+        "end": "2026-04-30"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "Fontainebleau Resort"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "gaming",
+        "interactive entertainment",
+        "streaming",
+        "creator economy"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://e3expo.com",
+      "ticket_price": {
+        "range": "TBD",
+        "note": "New event from E3/ESA organizers"
+      },
+      "description": "Successor to E3, created by the ESA. Gaming industry conference with strong creator and streaming components.",
+      "tags": [
+        "gaming",
+        "interactive",
+        "streaming",
+        "E3-successor"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 15,
+        "relevance": 21,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "social-media-marketing-world-2026",
+      "name": "Social Media Marketing World 2026",
+      "dates": {
+        "start": "2026-04-28",
+        "end": "2026-04-30"
+      },
+      "location": {
+        "city": "Anaheim",
+        "country": "USA",
+        "venue": "Anaheim Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social media marketing",
+        "content creation",
+        "AI workflows",
+        "video strategy"
+      ],
+      "vertical": [
+        "social-media",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://www.socialmediaexaminer.com/smmworld/register/",
+      "ticket_price": {
+        "range": "$497-$1,197",
+        "note": "Ticket tier dependent"
+      },
+      "description": "Flagship social media marketing conference by Social Media Examiner. Practical, tactical sessions. Best-known social media conference globally.",
+      "tags": [
+        "social-media",
+        "marketing",
+        "content-creation",
+        "AI",
+        "video"
+      ],
+      "speakers": [],
+      "score": 88,
+      "score_breakdown": {
+        "speakers": 30,
+        "size": 18,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "gamescom-latam-2026",
+      "name": "Gamescom LATAM",
+      "dates": {
+        "start": "2026-04-29",
+        "end": "2026-05-03"
+      },
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "venue": "São Paulo Expo"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "gaming",
+        "streaming",
+        "content creators",
+        "Latin American gaming"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 100000,
+      "website": "https://www.gamescom.global",
+      "ticket_price": {
+        "range": "R$50-R$300",
+        "note": "Various tiers"
+      },
+      "description": "Latin American edition of the world's largest gaming event. Massive creator and streamer presence in the Brazilian market.",
+      "tags": [
+        "gaming",
+        "latam",
+        "brazil",
+        "streaming",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 22,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "fujifilm-creator-summit-melbourne-2026",
+      "name": "Creator Summit (Fujifilm) Melbourne",
+      "dates": {
+        "start": "2026-05-09",
+        "end": "2026-05-09"
+      },
+      "location": {
+        "city": "Melbourne",
+        "country": "Australia",
+        "venue": "The Timber Yard"
+      },
+      "type": "workshop",
+      "focus_areas": [
+        "photo/video creation",
+        "visual storytelling",
+        "filmmaking"
+      ],
+      "vertical": [
+        "photography",
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 200,
+      "website": "https://fujifilm-houseofphotography.com.au/products/creator-summit",
+      "ticket_price": {
+        "range": "$45+",
+        "note": "Affordable entry"
+      },
+      "description": "Hands-on visual creator event by Fujifilm. Photo, video, filmmaking workshops. Not a ballroom event.",
+      "tags": [
+        "photography",
+        "video",
+        "filmmaking",
+        "australia"
+      ],
+      "speakers": [],
+      "score": 55,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 5,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-east-2026",
+      "name": "DigiMarCon East 2026",
+      "dates": {
+        "start": "2026-05-12",
+        "end": "2026-05-13"
+      },
+      "location": {
+        "city": "Boston",
+        "country": "USA",
+        "venue": "Hotel TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "content marketing",
+        "AI"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconeast.com",
+      "ticket_price": {
+        "range": "$297-$997",
+        "note": "Various passes"
+      },
+      "description": "Digital marketing conference covering social media, content, AI. Part of the global DigiMarCon series.",
+      "tags": [
+        "digital-marketing",
+        "social-media",
+        "AI",
+        "content"
+      ],
+      "speakers": [],
+      "score": 60,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 12,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "socialday-london-2026",
+      "name": "SocialDay 2026",
+      "dates": {
+        "start": "2026-05-19",
+        "end": "2026-05-20"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "TBD London"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social media",
+        "community building",
+        "platform strategy"
+      ],
+      "vertical": [
+        "social-media",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 600,
+      "website": "https://socialday.co.uk",
+      "ticket_price": {
+        "range": "£299-£699",
+        "note": "Conference pass"
+      },
+      "description": "Practitioner-led social media conference in London. Less hype, more 'here's what worked for us.' Three-day event with opening party.",
+      "tags": [
+        "social-media",
+        "community",
+        "london",
+        "practitioner"
+      ],
+      "speakers": [],
+      "score": 70,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 12,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "podcast-show-london-2026",
+      "name": "The Podcast Show London 2026",
+      "dates": {
+        "start": "2026-05-20",
+        "end": "2026-05-21"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "Business Design Centre, Islington"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "podcasting",
+        "audio business",
+        "creator growth",
+        "monetization"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3000,
+      "website": "https://www.thepodcastshowlondon.com",
+      "ticket_price": {
+        "range": "£99-£499",
+        "note": "Various tiers"
+      },
+      "description": "The biggest international festival for the business of podcasting. Major podcast industry event in London.",
+      "tags": [
+        "podcast",
+        "audio",
+        "london",
+        "business"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 17,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "wits-travel-summit-2026",
+      "name": "WITS Travel Creator Summit",
+      "dates": {
+        "start": "2026-05-29",
+        "end": "2026-05-31"
+      },
+      "location": {
+        "city": "Chattanooga",
+        "country": "USA",
+        "venue": "TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "travel creators",
+        "tourism brands",
+        "partnerships"
+      ],
+      "vertical": [
+        "travel",
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 400,
+      "website": "https://witsummit.com/chattanooga",
+      "ticket_price": {
+        "range": "$399+",
+        "note": "Various tiers"
+      },
+      "description": "Travel creator summit. Clear path to partnerships with tourism boards and travel brands.",
+      "tags": [
+        "travel",
+        "creator",
+        "tourism",
+        "partnerships"
+      ],
+      "speakers": [],
+      "score": 70,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 10,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "twitchcon-europe-2026",
+      "name": "TwitchCon Europe 2026",
+      "dates": {
+        "start": "2026-05-30",
+        "end": "2026-05-31"
+      },
+      "location": {
+        "city": "Rotterdam",
+        "country": "Netherlands",
+        "venue": "Ahoy Rotterdam"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "streaming",
+        "gaming creators",
+        "Twitch platform",
+        "community"
+      ],
+      "vertical": [
+        "streaming",
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 15000,
+      "website": "https://www.twitchcon.com/rotterdam-2026/",
+      "ticket_price": {
+        "range": "€49-€199",
+        "note": "Pass tiers"
+      },
+      "description": "European edition of TwitchCon. Annual homecoming for streamers. Gaming creators, community meetups, brand partnerships.",
+      "tags": [
+        "twitch",
+        "streaming",
+        "gaming",
+        "europe",
+        "netherlands"
+      ],
+      "speakers": [],
+      "score": 90,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 20,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "sxsw-london-2026",
+      "name": "SXSW London 2026",
+      "dates": {
+        "start": "2026-06-01",
+        "end": "2026-06-06"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "East London venues"
+      },
+      "type": "festival",
+      "focus_areas": [
+        "creator economy",
+        "tech",
+        "music",
+        "film",
+        "AI",
+        "marketing"
+      ],
+      "vertical": [
+        "tech",
+        "creator-economy",
+        "media"
+      ],
+      "size": "mega",
+      "estimated_attendees": 20000,
+      "website": "https://www.sxswlondon.com",
+      "ticket_price": {
+        "range": "£870-£1,560",
+        "note": "Various passes, early bird pricing available"
+      },
+      "description": "SXSW's London edition. Dedicated Creator Economy track exploring new revenue streams and platform dynamics. Major international expansion of the SXSW brand.",
+      "tags": [
+        "tech",
+        "creator-economy",
+        "music",
+        "film",
+        "london"
+      ],
+      "speakers": [],
+      "score": 88,
+      "score_breakdown": {
+        "speakers": 28,
+        "size": 18,
+        "relevance": 22,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "collision-2026",
+      "name": "Collision Conference 2026",
+      "dates": {
+        "start": "2026-06-03",
+        "end": "2026-06-04"
+      },
+      "location": {
+        "city": "Toronto",
+        "country": "Canada",
+        "venue": "Enercare Centre"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "tech",
+        "startups",
+        "creator economy",
+        "media"
+      ],
+      "vertical": [
+        "tech",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 40000,
+      "website": "https://collisionconf.com",
+      "ticket_price": {
+        "range": "$799-$2,499",
+        "note": "Various passes"
+      },
+      "description": "Major tech conference in North America. Creator economy and media tracks. Strong startup and VC networking.",
+      "tags": [
+        "tech",
+        "startups",
+        "creator-economy",
+        "toronto"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 18,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "south-summit-madrid-2026",
+      "name": "South Summit Madrid 2026",
+      "dates": {
+        "start": "2026-06-10",
+        "end": "2026-06-12"
+      },
+      "location": {
+        "city": "Madrid",
+        "country": "Spain",
+        "venue": "La Nave"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "startups",
+        "innovation",
+        "entrepreneurship",
+        "creator tools"
+      ],
+      "vertical": [
+        "startups",
+        "tech"
+      ],
+      "size": "large",
+      "estimated_attendees": 8000,
+      "website": "https://www.southsummit.io/e/madrid/en",
+      "ticket_price": {
+        "range": "€299-€999",
+        "note": "Various passes"
+      },
+      "description": "Leading startup and innovation summit in Southern Europe. Startup competitions, investor networking.",
+      "tags": [
+        "startups",
+        "innovation",
+        "spain",
+        "entrepreneurship"
+      ],
+      "speakers": [],
+      "score": 62,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 15,
+        "relevance": 7,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "cannes-lions-2026",
+      "name": "Cannes Lions International Festival of Creativity",
+      "dates": {
+        "start": "2026-06-22",
+        "end": "2026-06-26"
+      },
+      "location": {
+        "city": "Cannes",
+        "country": "France",
+        "venue": "Palais des Festivals"
+      },
+      "type": "festival",
+      "focus_areas": [
+        "advertising",
+        "creative strategy",
+        "brand building",
+        "creator partnerships"
+      ],
+      "vertical": [
+        "advertising",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 15000,
+      "website": "https://www.canneslions.com",
+      "ticket_price": {
+        "range": "€1,245-€4,465",
+        "note": "Pass dependent"
+      },
+      "description": "Premier global advertising and creativity festival. Increasingly features creator economy conversations. Where advertising meets creator partnerships.",
+      "tags": [
+        "advertising",
+        "creativity",
+        "brand",
+        "cannes"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 30,
+        "size": 17,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vidcon-anaheim-2026",
+      "name": "VidCon Anaheim 2026",
+      "dates": {
+        "start": "2026-06-25",
+        "end": "2026-06-27"
+      },
+      "location": {
+        "city": "Anaheim",
+        "country": "USA",
+        "venue": "Anaheim Convention Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "youtube creators",
+        "content creation",
+        "influencer marketing",
+        "creator tools",
+        "TikTok"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 50000,
+      "website": "https://www.vidcon.com/anaheim/",
+      "ticket_price": {
+        "range": "$159-$899",
+        "note": "Community to Industry tiers"
+      },
+      "description": "World's largest creator economy event. Creators, fans, and industry leaders under one roof. YouTube, TikTok, streaming, brand partnerships. The Super Bowl for creators.",
+      "tags": [
+        "creator",
+        "youtube",
+        "tiktok",
+        "industry",
+        "expo",
+        "influencer"
+      ],
+      "speakers": [],
+      "score": 97,
+      "score_breakdown": {
+        "speakers": 35,
+        "size": 22,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "anime-expo-2026",
+      "name": "Anime Expo 2026",
+      "dates": {
+        "start": "2026-07-02",
+        "end": "2026-07-05"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "country": "USA",
+        "venue": "Los Angeles Convention Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "anime",
+        "manga",
+        "cosplay",
+        "Japanese pop culture",
+        "content creators"
+      ],
+      "vertical": [
+        "anime",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 100000,
+      "website": "https://www.anime-expo.org",
+      "ticket_price": {
+        "range": "$55-$175",
+        "note": "Day to 4-day badges"
+      },
+      "description": "Largest anime convention in North America. Massive creator and cosplay community. Growing space for anime content creators.",
+      "tags": [
+        "anime",
+        "manga",
+        "cosplay",
+        "creator",
+        "los-angeles"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 22,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "childrens-media-conference-2026",
+      "name": "The Children's Media Conference",
+      "dates": {
+        "start": "2026-07-07",
+        "end": "2026-07-09"
+      },
+      "location": {
+        "city": "Sheffield",
+        "country": "UK",
+        "venue": "Sheffield Hallam University"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "kids media",
+        "educational content",
+        "family creators"
+      ],
+      "vertical": [
+        "kids-media",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 800,
+      "website": "https://www.thechildrensmediaconference.com/events/cmc-2026/",
+      "ticket_price": {
+        "range": "£299-£599",
+        "note": "Early bird and freelancer pricing"
+      },
+      "description": "Niche conference for kids and family content creators. YouTube educational creators, producers, kids media teams.",
+      "tags": [
+        "kids",
+        "education",
+        "family",
+        "youtube",
+        "media"
+      ],
+      "speakers": [],
+      "score": 65,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 12,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "affiliate-world-europe-2026",
+      "name": "Affiliate World Europe 2026",
+      "dates": {
+        "start": "2026-07-09",
+        "end": "2026-07-10"
+      },
+      "location": {
+        "city": "Barcelona",
+        "country": "Spain",
+        "venue": "Fira Barcelona"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "affiliate marketing",
+        "ecommerce",
+        "performance marketing"
+      ],
+      "vertical": [
+        "affiliate-marketing",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://affiliateworldconferences.com/europe",
+      "ticket_price": {
+        "range": "$599-$1,999",
+        "note": "Various tiers"
+      },
+      "description": "European edition of the top affiliate marketing conference. Performance marketing, ecommerce, creator monetization.",
+      "tags": [
+        "affiliate",
+        "europe",
+        "ecommerce",
+        "performance-marketing"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 15,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creatorfest-europe-2026",
+      "name": "CreatorFest Europe 2026",
+      "dates": {
+        "start": "2026-07-14",
+        "end": "2026-07-15"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "Magazine London"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "creator economy",
+        "influencer partnerships",
+        "brand strategy",
+        "creator tools"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3000,
+      "website": "https://creatorfest.com",
+      "ticket_price": {
+        "range": "£199-£799",
+        "note": "Various tiers"
+      },
+      "description": "Rebranded from Influencer Marketing Show. Europe's premier creator economy event. Brands, agencies, creators, tools - the whole ecosystem.",
+      "tags": [
+        "creator-economy",
+        "influencer-marketing",
+        "london",
+        "brand-partnerships"
+      ],
+      "speakers": [],
+      "score": 88,
+      "score_breakdown": {
+        "speakers": 28,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "madfest-london-2026",
+      "name": "MAD//Fest London 2026",
+      "dates": {
+        "start": "2026-07-08",
+        "end": "2026-07-10"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "The Truman Brewery"
+      },
+      "type": "festival",
+      "focus_areas": [
+        "marketing",
+        "advertising",
+        "disruption",
+        "creator economy"
+      ],
+      "vertical": [
+        "marketing",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 15000,
+      "website": "https://www.madfestlondon.com",
+      "ticket_price": {
+        "range": "Free-£995",
+        "note": "Brand/agency passes often free"
+      },
+      "description": "UK's largest marketing festival. 15,000+ brands and agencies. Campus-style event. Always sold out.",
+      "tags": [
+        "marketing",
+        "advertising",
+        "london",
+        "festival"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 18,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "open-sauce-2026",
+      "name": "Open Sauce 2026",
+      "dates": {
+        "start": "2026-07-17",
+        "end": "2026-07-19"
+      },
+      "location": {
+        "city": "San Mateo",
+        "country": "USA",
+        "venue": "San Mateo County Event Center"
+      },
+      "type": "festival",
+      "focus_areas": [
+        "maker/tech creators",
+        "engineering",
+        "science",
+        "3D printing"
+      ],
+      "vertical": [
+        "maker",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 10000,
+      "website": "https://opensauce.com",
+      "ticket_price": {
+        "range": "$131+",
+        "note": "GA from $131, higher tiers available"
+      },
+      "description": "Festival for people who make things. 500+ unique projects, maker creators, tech builds. Founded by YouTuber William Osman. Industry Day + 2-day main event.",
+      "tags": [
+        "maker",
+        "tech",
+        "science",
+        "engineering",
+        "youtube"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 18,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "san-diego-comic-con-2026",
+      "name": "San Diego Comic-Con 2026",
+      "dates": {
+        "start": "2026-07-23",
+        "end": "2026-07-26"
+      },
+      "location": {
+        "city": "San Diego",
+        "country": "USA",
+        "venue": "San Diego Convention Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "pop culture",
+        "comics",
+        "entertainment",
+        "content creators"
+      ],
+      "vertical": [
+        "entertainment",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 135000,
+      "website": "https://www.comic-con.org",
+      "ticket_price": {
+        "range": "$55-$250",
+        "note": "Lottery-based badge sales"
+      },
+      "description": "The world's premier pop culture event. Massive creator presence across YouTube, TikTok, and streaming platforms. Preview Night July 22.",
+      "tags": [
+        "pop-culture",
+        "comics",
+        "entertainment",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 22,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "affiliate-summit-east-2026",
+      "name": "Affiliate Summit East 2026",
+      "dates": {
+        "start": "2026-07-27",
+        "end": "2026-07-28"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "NY Marriott Marquis"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "affiliate marketing",
+        "ecommerce",
+        "creator monetization"
+      ],
+      "vertical": [
+        "affiliate-marketing",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 4500,
+      "website": "https://www.affiliatesummit.com/east",
+      "ticket_price": {
+        "range": "$599-$1,999",
+        "note": "Various tiers"
+      },
+      "description": "East coast edition of Affiliate Summit. 4,500 ecommerce entrepreneurs, affiliates, content publishers.",
+      "tags": [
+        "affiliate",
+        "ecommerce",
+        "publisher",
+        "new-york"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 14,
+        "relevance": 16,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creator-economy-live-east-2026",
+      "name": "Creator Economy Live East",
+      "dates": {
+        "start": "2026-07-28",
+        "end": "2026-07-29"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "TBD NYC"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "influencer marketing",
+        "ecommerce",
+        "creator campaigns",
+        "brand collaborations"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 2000,
+      "website": "https://www.creatoreconomylive.com/east",
+      "ticket_price": {
+        "range": "$499-$1,499",
+        "note": "Multiple tiers"
+      },
+      "description": "East coast edition focused on influencer marketing for brands, agencies, and business-minded creators. Campaign ROI and strategy.",
+      "tags": [
+        "creator-economy",
+        "influencer-marketing",
+        "ecommerce",
+        "new-york"
+      ],
+      "speakers": [],
+      "score": 88,
+      "score_breakdown": {
+        "speakers": 28,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "gamescom-2026",
+      "name": "Gamescom 2026",
+      "dates": {
+        "start": "2026-08-26",
+        "end": "2026-08-30"
+      },
+      "location": {
+        "city": "Cologne",
+        "country": "Germany",
+        "venue": "Koelnmesse"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "gaming",
+        "digital culture",
+        "streaming",
+        "content creators"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 300000,
+      "website": "https://www.gamescom.global",
+      "ticket_price": {
+        "range": "€15-€150",
+        "note": "Various pass types"
+      },
+      "description": "World's largest gaming event. Europe's leading trade fair for digital games culture. Massive streamer and gaming creator presence.",
+      "tags": [
+        "gaming",
+        "esports",
+        "streaming",
+        "creator",
+        "germany"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 25,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "podcast-movement-2026",
+      "name": "Podcast Movement 2026",
+      "dates": {
+        "start": "2026-08-31",
+        "end": "2026-09-03"
+      },
+      "location": {
+        "city": "San Diego",
+        "country": "USA",
+        "venue": "San Diego Convention Center area"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "podcasting",
+        "audio",
+        "content creation",
+        "monetization"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 4000,
+      "website": "https://podcastmovement.com",
+      "ticket_price": {
+        "range": "$349-$899",
+        "note": "Various pass levels"
+      },
+      "description": "The most respected and attended conference for podcasters and industry professionals. 10+ year track record.",
+      "tags": [
+        "podcast",
+        "audio",
+        "creator",
+        "monetization"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 28,
+        "size": 17,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "inbound-2026",
+      "name": "INBOUND 2026",
+      "dates": {
+        "start": "2026-09-16",
+        "end": "2026-09-18"
+      },
+      "location": {
+        "city": "Boston",
+        "country": "USA",
+        "venue": "Boston Convention and Exhibition Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "marketing",
+        "sales",
+        "creator-led growth",
+        "content strategy",
+        "AI"
+      ],
+      "vertical": [
+        "marketing",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 30000,
+      "website": "https://www.inbound.com",
+      "ticket_price": {
+        "range": "$299-$1,599",
+        "note": "Multiple tiers"
+      },
+      "description": "HubSpot's flagship marketing conference. Back in Boston. Keynotes, workshops, networking for marketing, sales, and content professionals.",
+      "tags": [
+        "marketing",
+        "sales",
+        "content",
+        "growth",
+        "hubspot"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 28,
+        "size": 19,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "fincon-2026",
+      "name": "FinCon 2026",
+      "dates": {
+        "start": "2026-09-16",
+        "end": "2026-09-18"
+      },
+      "location": {
+        "city": "Palm Springs",
+        "country": "USA",
+        "venue": "Palm Springs Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "financial creators",
+        "personal finance",
+        "content creation",
+        "brand partnerships"
+      ],
+      "vertical": [
+        "finance",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 2500,
+      "website": "https://finconexpo.com",
+      "ticket_price": {
+        "range": "$299-$799",
+        "note": "Various pass levels"
+      },
+      "description": "The business event for money creators. Helps financial content creators go pro and scale. Brand speed-dating sessions included.",
+      "tags": [
+        "finance",
+        "personal-finance",
+        "creator",
+        "brand-partnerships"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 22,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "dmexco-2026",
+      "name": "DMEXCO 2026",
+      "dates": {
+        "start": "2026-09-23",
+        "end": "2026-09-24"
+      },
+      "location": {
+        "city": "Cologne",
+        "country": "Germany",
+        "venue": "Koelnmesse"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "digital marketing",
+        "adtech",
+        "martech",
+        "creator economy"
+      ],
+      "vertical": [
+        "digital-marketing",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 40000,
+      "website": "https://dmexco.com",
+      "ticket_price": {
+        "range": "€0-€999",
+        "note": "Expo free, conference paid"
+      },
+      "description": "Europe's leading digital marketing expo and conference. 700+ partners, 1000+ speakers. Meeting place for digital business and innovation.",
+      "tags": [
+        "digital-marketing",
+        "adtech",
+        "martech",
+        "germany"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 20,
+        "relevance": 16,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vidsummit-2026",
+      "name": "VidSummit 2026",
+      "dates": {
+        "start": "2026-09-29",
+        "end": "2026-10-01"
+      },
+      "location": {
+        "city": "Dallas",
+        "country": "USA",
+        "venue": "TBD Dallas"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "YouTube growth",
+        "video strategy",
+        "monetization",
+        "creator business"
+      ],
+      "vertical": [
+        "youtube",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3000,
+      "website": "https://www.vidsummit.com",
+      "ticket_price": {
+        "range": "$497-$1,997",
+        "note": "Various tiers"
+      },
+      "description": "The YouTube and video marketing conference. Top video creators, YouTubers, brands and agencies. Focused on monetization and growth strategies.",
+      "tags": [
+        "youtube",
+        "video",
+        "monetization",
+        "growth",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 92,
+      "score_breakdown": {
+        "speakers": 32,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "tbex-summit-america-2026",
+      "name": "TBEX Summit America",
+      "dates": {
+        "start": "2026-09-29",
+        "end": "2026-10-02"
+      },
+      "location": {
+        "city": "Fargo",
+        "country": "USA",
+        "venue": "TBD Fargo ND"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "travel creators",
+        "tourism",
+        "brand partnerships",
+        "affiliate"
+      ],
+      "vertical": [
+        "travel",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://tbexcon.com/summit-america-2026/",
+      "ticket_price": {
+        "range": "$399+",
+        "note": "Various tiers"
+      },
+      "description": "Travel creator summit focused on brand partnerships with tourism boards and travel brands.",
+      "tags": [
+        "travel",
+        "tourism",
+        "creator",
+        "brand-partnerships"
+      ],
+      "speakers": [],
+      "score": 68,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "content-marketing-world-2026",
+      "name": "Content Marketing World 2026",
+      "dates": {
+        "start": "2026-10-05",
+        "end": "2026-10-07"
+      },
+      "location": {
+        "city": "Denver",
+        "country": "USA",
+        "venue": "Colorado Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "content marketing",
+        "content strategy",
+        "AI",
+        "creator tools"
+      ],
+      "vertical": [
+        "content-marketing",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 3400,
+      "website": "https://www.contentmarketingworld.com",
+      "ticket_price": {
+        "range": "$599-$2,199",
+        "note": "Various passes"
+      },
+      "description": "Premier content marketing conference. 3,400+ marketing experts. Content strategy, AI, storytelling, creator tools.",
+      "tags": [
+        "content-marketing",
+        "strategy",
+        "AI",
+        "storytelling"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "advertising-week-ny-2026",
+      "name": "Advertising Week New York 2026",
+      "dates": {
+        "start": "2026-10-05",
+        "end": "2026-10-08"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "THE PENN DISTRICT"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "advertising",
+        "marketing",
+        "media",
+        "creator economy",
+        "tech"
+      ],
+      "vertical": [
+        "advertising",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 17000,
+      "website": "https://advertisingweek.com",
+      "ticket_price": {
+        "range": "$449-$2,499",
+        "note": "Various passes"
+      },
+      "description": "Premier advertising and marketing event. Bigger and more connected in 2026. Covers marketing, media, tech, and creator economy.",
+      "tags": [
+        "advertising",
+        "marketing",
+        "media",
+        "new-york"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 18,
+        "relevance": 17,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "foodiecon-2026",
+      "name": "FoodieCon (NYCWFF)",
+      "dates": {
+        "start": "2026-10-19",
+        "end": "2026-10-19"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "TBD NYC"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "food creators",
+        "food brands",
+        "CPG",
+        "recipe creators"
+      ],
+      "vertical": [
+        "food",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://nycwff.org/foodiecon/",
+      "ticket_price": {
+        "range": "$75-$250",
+        "note": "Various packages"
+      },
+      "description": "Food creator event connected to NYC Wine & Food Festival. Food TikTok, Instagram, YouTube creators meet food brands.",
+      "tags": [
+        "food",
+        "creator",
+        "cpg",
+        "tiktok",
+        "instagram"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 14,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "spiel-essen-2026",
+      "name": "SPIEL Essen 2026",
+      "dates": {
+        "start": "2026-10-22",
+        "end": "2026-10-25"
+      },
+      "location": {
+        "city": "Essen",
+        "country": "Germany",
+        "venue": "Messe Essen"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "board games",
+        "tabletop gaming",
+        "gaming creators"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 220000,
+      "website": "https://www.spiel-essen.de/en/",
+      "ticket_price": {
+        "range": "€15-€40",
+        "note": "Day passes"
+      },
+      "description": "World's largest public fair for board games. Growing tabletop creator community on YouTube and TikTok.",
+      "tags": [
+        "board-games",
+        "tabletop",
+        "gaming",
+        "germany"
+      ],
+      "speakers": [],
+      "score": 60,
+      "score_breakdown": {
+        "speakers": 10,
+        "size": 22,
+        "relevance": 8,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "web-summit-2026",
+      "name": "Web Summit 2026",
+      "dates": {
+        "start": "2026-11-09",
+        "end": "2026-11-12"
+      },
+      "location": {
+        "city": "Lisbon",
+        "country": "Portugal",
+        "venue": "Altice Arena and FIL"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "tech",
+        "media",
+        "marketing",
+        "creator economy",
+        "startups"
+      ],
+      "vertical": [
+        "tech",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 70000,
+      "website": "https://websummit.com",
+      "ticket_price": {
+        "range": "€495-€2,495",
+        "note": "Various passes"
+      },
+      "description": "Major global tech conference. Strong media and creator economy tracks. Relevant for creator tools founders, marketers, and media teams.",
+      "tags": [
+        "tech",
+        "startups",
+        "media",
+        "creator-economy",
+        "lisbon"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 20,
+        "relevance": 13,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "twitchcon-san-diego-2026",
+      "name": "TwitchCon San Diego 2026",
+      "dates": {
+        "start": "2026-11-13",
+        "end": "2026-11-15"
+      },
+      "location": {
+        "city": "San Diego",
+        "country": "USA",
+        "venue": "San Diego Convention Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "streaming",
+        "gaming creators",
+        "Twitch platform",
+        "community"
+      ],
+      "vertical": [
+        "streaming",
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 25000,
+      "website": "https://www.twitchcon.com",
+      "ticket_price": {
+        "range": "$59-$299",
+        "note": "Pass tiers"
+      },
+      "description": "The big US TwitchCon. Streaming community's annual gathering. Gaming creators, partner meetups, brand activations.",
+      "tags": [
+        "twitch",
+        "streaming",
+        "gaming",
+        "san-diego"
+      ],
+      "speakers": [],
+      "score": 93,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 22,
+        "relevance": 26,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-online-2026",
+      "name": "DigiMarCon Online 2026",
+      "dates": {
+        "start": "2026-11-04",
+        "end": "2026-11-06"
+      },
+      "location": {
+        "city": "Virtual",
+        "country": "Online",
+        "venue": "Virtual"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "AI",
+        "content"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://digimarcon.com/events/",
+      "ticket_price": {
+        "range": "$297-$697",
+        "note": "Online pass"
+      },
+      "description": "Global virtual digital marketing conference. Part of DigiMarCon series.",
+      "tags": [
+        "digital-marketing",
+        "virtual",
+        "AI",
+        "content"
+      ],
+      "speakers": [],
+      "score": 55,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "brandweek-2026",
+      "name": "Brandweek 2026",
+      "dates": {
+        "start": "2026-09-21",
+        "end": "2026-09-24"
+      },
+      "location": {
+        "city": "Atlanta",
+        "country": "USA",
+        "venue": "Southern Exchange"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "brand marketing",
+        "creator partnerships",
+        "advertising strategy"
+      ],
+      "vertical": [
+        "marketing",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 2000,
+      "website": "https://event.adweek.com/brandweek_2026",
+      "ticket_price": {
+        "range": "$999-$2,499",
+        "note": "Adweek event"
+      },
+      "description": "Adweek's brand marketing summit. Conversations with big-name guests on marketing strategy and creator partnerships.",
+      "tags": [
+        "brand-marketing",
+        "advertising",
+        "atlanta"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 12,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "rise-conference-2026",
+      "name": "RISE Conference 2026",
+      "dates": {
+        "start": "2026-09-01",
+        "end": "2026-09-03"
+      },
+      "location": {
+        "city": "Hong Kong",
+        "country": "China",
+        "venue": "Hong Kong Convention Centre"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "tech",
+        "startups",
+        "creator economy",
+        "Asia innovation"
+      ],
+      "vertical": [
+        "tech",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 15000,
+      "website": "https://riseconf.com",
+      "ticket_price": {
+        "range": "$399-$2,499",
+        "note": "Various passes"
+      },
+      "description": "Asia's leading tech conference by Web Summit. Global tech community meets Asia's innovation ecosystem. Creator economy tracks included.",
+      "tags": [
+        "tech",
+        "asia",
+        "startups",
+        "hong-kong"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 17,
+        "relevance": 13,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "sxsw-edu-2026",
+      "name": "SXSW EDU 2026",
+      "dates": {
+        "start": "2026-03-09",
+        "end": "2026-03-12"
+      },
+      "location": {
+        "city": "Austin",
+        "country": "USA",
+        "venue": "Austin Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "education",
+        "edtech",
+        "educational content creators"
+      ],
+      "vertical": [
+        "education",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://sxswedu.com",
+      "ticket_price": {
+        "range": "$495-$1,295",
+        "note": "Various passes"
+      },
+      "description": "Education-focused SXSW event. 300+ sessions across 4 days. Relevant for educational content creators and edtech.",
+      "tags": [
+        "education",
+        "edtech",
+        "creator",
+        "austin"
+      ],
+      "speakers": [],
+      "score": 65,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 15,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "mozcon-2026",
+      "name": "MozCon New York 2026",
+      "dates": {
+        "start": "2026-10-15",
+        "end": "2026-10-15"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "The Glasshouse"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "SEO",
+        "content marketing",
+        "digital marketing",
+        "creator discovery"
+      ],
+      "vertical": [
+        "seo",
+        "content-marketing"
+      ],
+      "size": "small",
+      "estimated_attendees": 400,
+      "website": "https://moz.com/mozcon",
+      "ticket_price": {
+        "range": "$799-$1,299",
+        "note": "Single-day event"
+      },
+      "description": "Moz's SEO and digital marketing conference. Content marketing, creator discovery, and SEO strategies. Single day in NYC.",
+      "tags": [
+        "seo",
+        "content-marketing",
+        "digital-marketing"
+      ],
+      "speakers": [],
+      "score": 62,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 8,
+        "relevance": 12,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-midwest-2026",
+      "name": "DigiMarCon Midwest 2026",
+      "dates": {
+        "start": "2026-06-04",
+        "end": "2026-06-05"
+      },
+      "location": {
+        "city": "Chicago",
+        "country": "USA",
+        "venue": "Hyatt Regency Chicago"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "content",
+        "AI"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconmidwest.com",
+      "ticket_price": {
+        "range": "$297-$997",
+        "note": "Various passes"
+      },
+      "description": "Midwest edition of DigiMarCon digital marketing conference series.",
+      "tags": [
+        "digital-marketing",
+        "social-media",
+        "chicago"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-west-2026",
+      "name": "DigiMarCon West 2026",
+      "dates": {
+        "start": "2026-07-16",
+        "end": "2026-07-17"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "country": "USA",
+        "venue": "Loews Hollywood"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "influencer marketing"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconwest.com",
+      "ticket_price": {
+        "range": "$297-$997",
+        "note": "Various passes"
+      },
+      "description": "West coast DigiMarCon digital marketing conference.",
+      "tags": [
+        "digital-marketing",
+        "social-media",
+        "los-angeles"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-europe-2026",
+      "name": "DigiMarCon Europe 2026",
+      "dates": {
+        "start": "2026-04-23",
+        "end": "2026-04-24"
+      },
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "venue": "Johan Cruyff Arena"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "content marketing"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconeurope.com",
+      "ticket_price": {
+        "range": "€297-€997",
+        "note": "Various passes"
+      },
+      "description": "European DigiMarCon digital marketing conference in Amsterdam.",
+      "tags": [
+        "digital-marketing",
+        "europe",
+        "amsterdam"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-uk-2026",
+      "name": "DigiMarCon UK 2026",
+      "dates": {
+        "start": "2026-09-10",
+        "end": "2026-09-11"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "TBD London"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "content"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconuk.com",
+      "ticket_price": {
+        "range": "£297-£997",
+        "note": "Various passes"
+      },
+      "description": "UK DigiMarCon digital marketing conference.",
+      "tags": [
+        "digital-marketing",
+        "uk",
+        "london"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-asia-pacific-2026",
+      "name": "DigiMarCon Asia Pacific 2026",
+      "dates": {
+        "start": "2026-09-17",
+        "end": "2026-09-18"
+      },
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "venue": "Marina Bay Sands"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "content",
+        "Asia market"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconasiapacific.com",
+      "ticket_price": {
+        "range": "SGD 397-997",
+        "note": "Various passes"
+      },
+      "description": "Asia Pacific DigiMarCon digital marketing conference in Singapore.",
+      "tags": [
+        "digital-marketing",
+        "asia",
+        "singapore"
+      ],
+      "speakers": [],
+      "score": 60,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 12,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-middle-east-2026",
+      "name": "DigiMarCon Middle East 2026",
+      "dates": {
+        "start": "2026-11-19",
+        "end": "2026-11-20"
+      },
+      "location": {
+        "city": "Dubai",
+        "country": "UAE",
+        "venue": "InterContinental Dubai"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "MENA market"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarconmiddleeast.com",
+      "ticket_price": {
+        "range": "$297-$997",
+        "note": "Various passes"
+      },
+      "description": "Middle East DigiMarCon digital marketing conference in Dubai.",
+      "tags": [
+        "digital-marketing",
+        "MENA",
+        "dubai"
+      ],
+      "speakers": [],
+      "score": 60,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 12,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-south-america-2026",
+      "name": "DigiMarCon South America 2026",
+      "dates": {
+        "start": "2026-08-20",
+        "end": "2026-08-21"
+      },
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "venue": "TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "LATAM market"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://digimarcon.com/events/",
+      "ticket_price": {
+        "range": "$297-$997",
+        "note": "Various passes"
+      },
+      "description": "South American DigiMarCon digital marketing conference.",
+      "tags": [
+        "digital-marketing",
+        "latam",
+        "brazil"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "digimarcon-africa-2026",
+      "name": "DigiMarCon Africa 2026",
+      "dates": {
+        "start": "2026-10-08",
+        "end": "2026-10-09"
+      },
+      "location": {
+        "city": "Johannesburg",
+        "country": "South Africa",
+        "venue": "TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "digital marketing",
+        "social media",
+        "African market"
+      ],
+      "vertical": [
+        "digital-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 400,
+      "website": "https://digimarcon.com/events/",
+      "ticket_price": {
+        "range": "$297-$997",
+        "note": "Various passes"
+      },
+      "description": "African DigiMarCon digital marketing conference in Johannesburg.",
+      "tags": [
+        "digital-marketing",
+        "africa",
+        "south-africa"
+      ],
+      "speakers": [],
+      "score": 58,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "influencer-awards-mumbai-2026",
+      "name": "Influencer Awards India 2026",
+      "dates": {
+        "start": "2026-03-15",
+        "end": "2026-03-15"
+      },
+      "location": {
+        "city": "Mumbai",
+        "country": "India",
+        "venue": "JW Marriott Mumbai"
+      },
+      "type": "awards",
+      "focus_areas": [
+        "influencer marketing",
+        "creator economy",
+        "brand partnerships"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://www.entrepreneurindia.com/influencer/",
+      "ticket_price": {
+        "range": "Nomination-based",
+        "note": "Awards ceremony"
+      },
+      "description": "Premier platform celebrating Indian creators, brands, agencies, and marketing innovators.",
+      "tags": [
+        "india",
+        "influencer",
+        "awards",
+        "creator-economy"
+      ],
+      "speakers": [],
+      "score": 68,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 12,
+        "relevance": 18,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "martech-summit-hong-kong-2026",
+      "name": "The MarTech Summit Hong Kong",
+      "dates": {
+        "start": "2026-05-14",
+        "end": "2026-05-15"
+      },
+      "location": {
+        "city": "Hong Kong",
+        "country": "China",
+        "venue": "TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "marketing tech",
+        "data",
+        "AI",
+        "social commerce"
+      ],
+      "vertical": [
+        "martech"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://themartechsummit.com/hongkong/",
+      "ticket_price": {
+        "range": "HKD 3,999-8,999",
+        "note": "Various tiers"
+      },
+      "description": "Marketing technology summit in Hong Kong. Relevant for martech and creator tool companies in Asia.",
+      "tags": [
+        "martech",
+        "asia",
+        "hong-kong",
+        "AI"
+      ],
+      "speakers": [],
+      "score": 55,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 7,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "martech-summit-london-2026",
+      "name": "The MarTech Summit London",
+      "dates": {
+        "start": "2026-06-18",
+        "end": "2026-06-19"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "marketing tech",
+        "data",
+        "AI",
+        "CX"
+      ],
+      "vertical": [
+        "martech"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://themartechsummit.com/london/",
+      "ticket_price": {
+        "range": "£499-£999",
+        "note": "Various tiers"
+      },
+      "description": "London edition of MarTech Summit series.",
+      "tags": [
+        "martech",
+        "london",
+        "AI",
+        "data"
+      ],
+      "speakers": [],
+      "score": 55,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 7,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creator-camp-2026",
+      "name": "Creator Camp 2026",
+      "dates": {
+        "start": "2026-05-15",
+        "end": "2026-05-17"
+      },
+      "location": {
+        "city": "Various",
+        "country": "USA",
+        "venue": "Outdoor retreat-style"
+      },
+      "type": "retreat",
+      "focus_areas": [
+        "creator networking",
+        "workshops",
+        "collaboration",
+        "community"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "micro",
+      "estimated_attendees": 75,
+      "website": "https://creatorcamp.com",
+      "ticket_price": {
+        "range": "$997-$1,997",
+        "note": "All-inclusive retreat"
+      },
+      "description": "Intimate creator retreat. Small group workshops, collaboration sessions, deep networking. Estimated dates based on patterns.",
+      "tags": [
+        "creator",
+        "retreat",
+        "networking",
+        "workshops"
+      ],
+      "speakers": [],
+      "score": 68,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 5,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "craft-commerce-2026",
+      "name": "Craft + Commerce (ConvertKit)",
+      "dates": {
+        "start": "2026-06-08",
+        "end": "2026-06-10"
+      },
+      "location": {
+        "city": "Boise",
+        "country": "USA",
+        "venue": "Boise Centre"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "email marketing",
+        "creator business",
+        "monetization",
+        "newsletters"
+      ],
+      "vertical": [
+        "creator-economy",
+        "email-marketing"
+      ],
+      "size": "medium",
+      "estimated_attendees": 800,
+      "website": "https://convertkit.com/craft-commerce",
+      "ticket_price": {
+        "range": "$499-$999",
+        "note": "Conference pass"
+      },
+      "description": "ConvertKit's (Kit) annual creator conference. Focused on building sustainable creator businesses through email, courses, and digital products. Estimated dates.",
+      "tags": [
+        "email",
+        "creator-business",
+        "monetization",
+        "newsletters"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 12,
+        "relevance": 23,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "playlist-live-2026",
+      "name": "Playlist Live (Legacy/Inactive)",
+      "dates": {
+        "start": "2026-01-01",
+        "end": "2026-01-01"
+      },
+      "location": {
+        "city": "TBD",
+        "country": "USA",
+        "venue": "TBD"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "youtube creators",
+        "content creation",
+        "fan meetups"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 0,
+      "website": "https://en.wikipedia.org/wiki/Playlist_Live",
+      "ticket_price": {
+        "range": "N/A",
+        "note": "Currently inactive - last event 2022"
+      },
+      "description": "Legacy creator convention. Last event in 2022. Listed as inactive. Alternatives: VidCon, VidSummit, CreatorFest.",
+      "tags": [
+        "youtube",
+        "creator",
+        "inactive"
+      ],
+      "speakers": [],
+      "score": 0,
+      "score_breakdown": {
+        "speakers": 0,
+        "size": 0,
+        "relevance": 0,
+        "networking": 0,
+        "track_record": 0
+      }
+    },
+    {
+      "id": "pax-west-2026",
+      "name": "PAX West 2026",
+      "dates": {
+        "start": "2026-08-28",
+        "end": "2026-08-31"
+      },
+      "location": {
+        "city": "Seattle",
+        "country": "USA",
+        "venue": "Seattle Convention Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "gaming",
+        "streaming",
+        "content creators",
+        "esports"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 70000,
+      "website": "https://west.paxsite.com",
+      "ticket_price": {
+        "range": "$55-$225",
+        "note": "Day pass to 4-day badge"
+      },
+      "description": "West coast PAX gaming convention. Major gaming creator and streamer gathering. Estimated dates based on patterns.",
+      "tags": [
+        "gaming",
+        "streaming",
+        "esports",
+        "seattle"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 20,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "pax-australia-2026",
+      "name": "PAX Australia 2026",
+      "dates": {
+        "start": "2026-10-09",
+        "end": "2026-10-11"
+      },
+      "location": {
+        "city": "Melbourne",
+        "country": "Australia",
+        "venue": "Melbourne Convention and Exhibition Centre"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "gaming",
+        "streaming",
+        "content creators"
+      ],
+      "vertical": [
+        "gaming",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 50000,
+      "website": "https://aus.paxsite.com",
+      "ticket_price": {
+        "range": "AUD 55-175",
+        "note": "Various passes"
+      },
+      "description": "Australian PAX gaming convention. Major gaming creator gathering in Oceania. Estimated dates.",
+      "tags": [
+        "gaming",
+        "australia",
+        "streaming",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 18,
+        "relevance": 19,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "comic-con-special-edition-2026",
+      "name": "New York Comic Con 2026",
+      "dates": {
+        "start": "2026-10-08",
+        "end": "2026-10-11"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "Javits Center"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "pop culture",
+        "comics",
+        "entertainment",
+        "content creators"
+      ],
+      "vertical": [
+        "entertainment",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 200000,
+      "website": "https://www.newyorkcomiccon.com",
+      "ticket_price": {
+        "range": "$60-$250",
+        "note": "Day to weekend passes"
+      },
+      "description": "Major pop culture event on the East coast. Massive creator and fan community. Estimated dates based on patterns.",
+      "tags": [
+        "pop-culture",
+        "comics",
+        "entertainment",
+        "new-york"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 22,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "social-media-strategies-summit-ny-2026",
+      "name": "Social Media Strategies Summit New York",
+      "dates": {
+        "start": "2026-10-20",
+        "end": "2026-10-22"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "TBD NYC"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social strategy",
+        "content",
+        "AI",
+        "enterprise"
+      ],
+      "vertical": [
+        "social-media"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://socialmediastrategiessummit.com",
+      "ticket_price": {
+        "range": "$297-$697",
+        "note": "In-person pass"
+      },
+      "description": "Fall edition of Social Media Strategies Summit. Enterprise social strategy focus.",
+      "tags": [
+        "social-media",
+        "strategy",
+        "enterprise",
+        "new-york"
+      ],
+      "speakers": [],
+      "score": 62,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 10,
+        "relevance": 14,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vidcon-sao-paulo-2026",
+      "name": "VidCon São Paulo 2026",
+      "dates": {
+        "start": "2026-10-01",
+        "end": "2026-10-03"
+      },
+      "location": {
+        "city": "São Paulo",
+        "country": "Brazil",
+        "venue": "TBD"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "creators",
+        "youtube",
+        "tiktok",
+        "Latin American creators"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 30000,
+      "website": "https://www.vidcon.com",
+      "ticket_price": {
+        "range": "R$100-R$500",
+        "note": "Estimated pricing"
+      },
+      "description": "VidCon's Brazilian edition. Potential 2026 event - Informa is expanding VidCon internationally. Dates estimated.",
+      "tags": [
+        "creator",
+        "youtube",
+        "tiktok",
+        "brazil",
+        "latam"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 20,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vidcon-abu-dhabi-2026",
+      "name": "VidCon Abu Dhabi 2026",
+      "dates": {
+        "start": "2026-11-01",
+        "end": "2026-11-03"
+      },
+      "location": {
+        "city": "Abu Dhabi",
+        "country": "UAE",
+        "venue": "Abu Dhabi National Exhibition Centre"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "MENA creators",
+        "youtube",
+        "tiktok",
+        "influencer marketing"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 10000,
+      "website": "https://www.vidcon.com",
+      "ticket_price": {
+        "range": "AED 100-500",
+        "note": "Estimated pricing"
+      },
+      "description": "VidCon's Middle East edition. Not yet confirmed for 2026 but historically held in Abu Dhabi. Informa expanding VidCon globally. Dates estimated.",
+      "tags": [
+        "creator",
+        "youtube",
+        "MENA",
+        "abu-dhabi"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 18,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vidcon-mexico-city-2026",
+      "name": "VidCon Mexico City 2026",
+      "dates": {
+        "start": "2026-09-01",
+        "end": "2026-09-03"
+      },
+      "location": {
+        "city": "Mexico City",
+        "country": "Mexico",
+        "venue": "TBD"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "LATAM creators",
+        "youtube",
+        "tiktok",
+        "Spanish-language content"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 20000,
+      "website": "https://www.vidcon.com",
+      "ticket_price": {
+        "range": "MXN 500-2000",
+        "note": "Estimated pricing"
+      },
+      "description": "VidCon's Mexico edition. Not yet confirmed for 2026 but historically held in Mexico City. Dates estimated.",
+      "tags": [
+        "creator",
+        "youtube",
+        "latam",
+        "mexico"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 18,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vid-con-australia-2026",
+      "name": "VidCon Australia 2026",
+      "dates": {
+        "start": "2026-08-01",
+        "end": "2026-08-03"
+      },
+      "location": {
+        "city": "Melbourne",
+        "country": "Australia",
+        "venue": "Melbourne Convention Centre"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "Australian creators",
+        "youtube",
+        "tiktok"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 8000,
+      "website": "https://www.vidcon.com",
+      "ticket_price": {
+        "range": "AUD 80-400",
+        "note": "Estimated pricing"
+      },
+      "description": "VidCon's Australian edition. Informa expanding VidCon globally. Not confirmed for 2026. Dates estimated.",
+      "tags": [
+        "creator",
+        "youtube",
+        "australia"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 17,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "vidcon-singapore-2026",
+      "name": "VidCon Singapore 2026",
+      "dates": {
+        "start": "2026-06-01",
+        "end": "2026-06-03"
+      },
+      "location": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "venue": "TBD"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "Southeast Asian creators",
+        "youtube",
+        "tiktok"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 8000,
+      "website": "https://www.vidcon.com",
+      "ticket_price": {
+        "range": "SGD 80-400",
+        "note": "Estimated pricing"
+      },
+      "description": "VidCon's Singapore edition. Informa exploring international expansion. Not confirmed for 2026. Dates estimated.",
+      "tags": [
+        "creator",
+        "youtube",
+        "singapore",
+        "southeast-asia"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 17,
+        "relevance": 20,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "beautycon-us-2026",
+      "name": "Beautycon US 2026",
+      "dates": {
+        "start": "2026-08-15",
+        "end": "2026-08-16"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "country": "USA",
+        "venue": "TBD"
+      },
+      "type": "expo",
+      "focus_areas": [
+        "beauty creators",
+        "skincare",
+        "makeup",
+        "UGC"
+      ],
+      "vertical": [
+        "beauty",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://beautycon.com",
+      "ticket_price": {
+        "range": "$50-$300",
+        "note": "Estimated - dates/location not pinned"
+      },
+      "description": "Beautycon brand has announced 2026 return but dates/location not confirmed. Beauty creator community event.",
+      "tags": [
+        "beauty",
+        "skincare",
+        "creator",
+        "los-angeles"
+      ],
+      "speakers": [],
+      "score": 75,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 15,
+        "relevance": 22,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "youtube-brandcast-2026",
+      "name": "YouTube Brandcast 2026",
+      "dates": {
+        "start": "2026-05-12",
+        "end": "2026-05-12"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "David Geffen Hall at Lincoln Center"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "YouTube advertising",
+        "creator ecosystem",
+        "brand partnerships"
+      ],
+      "vertical": [
+        "youtube",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 2000,
+      "website": "https://brandcast.withyoutube.com",
+      "ticket_price": {
+        "range": "Invite-only",
+        "note": "Platform event for advertisers"
+      },
+      "description": "YouTube's annual advertiser showcase. Major creators appear. Platform announcements. Invite-only for brand/agency professionals. Estimated date based on patterns.",
+      "tags": [
+        "youtube",
+        "advertising",
+        "platform",
+        "brand"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 28,
+        "size": 12,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "tiktok-world-2026",
+      "name": "TikTok World 2026",
+      "dates": {
+        "start": "2026-09-15",
+        "end": "2026-09-15"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "TBD or Virtual"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "TikTok advertising",
+        "creator tools",
+        "short-form video"
+      ],
+      "vertical": [
+        "tiktok",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://tiktokworld.com",
+      "ticket_price": {
+        "range": "Free",
+        "note": "Platform event, registration required"
+      },
+      "description": "TikTok's annual platform event for advertisers and creators. Product launches, creator tools, ad platform updates. Estimated date.",
+      "tags": [
+        "tiktok",
+        "short-form",
+        "advertising",
+        "platform"
+      ],
+      "speakers": [],
+      "score": 85,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 15,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "instagram-creators-week-2026",
+      "name": "Instagram Creators Week 2026",
+      "dates": {
+        "start": "2026-06-15",
+        "end": "2026-06-17"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "country": "USA",
+        "venue": "TBD or Virtual"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "Instagram",
+        "Reels",
+        "creator tools",
+        "monetization"
+      ],
+      "vertical": [
+        "instagram",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://about.instagram.com",
+      "ticket_price": {
+        "range": "Invite/Free",
+        "note": "Platform-hosted event"
+      },
+      "description": "Instagram's creator-focused event. Product announcements, creator tools, Reels strategy. Estimated dates based on patterns.",
+      "tags": [
+        "instagram",
+        "reels",
+        "creator",
+        "platform"
+      ],
+      "speakers": [],
+      "score": 80,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 12,
+        "relevance": 26,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "linkedin-creators-summit-2026",
+      "name": "LinkedIn Creators Summit 2026",
+      "dates": {
+        "start": "2026-05-01",
+        "end": "2026-05-01"
+      },
+      "location": {
+        "city": "San Francisco",
+        "country": "USA",
+        "venue": "LinkedIn HQ or virtual"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "LinkedIn content",
+        "B2B creators",
+        "thought leadership"
+      ],
+      "vertical": [
+        "linkedin",
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 300,
+      "website": "https://www.linkedin.com",
+      "ticket_price": {
+        "range": "Invite-only",
+        "note": "Platform event"
+      },
+      "description": "LinkedIn's creator-focused gathering. B2B content creation, thought leadership. Estimated dates.",
+      "tags": [
+        "linkedin",
+        "b2b",
+        "thought-leadership",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 8,
+        "relevance": 22,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "spotify-stream-on-2026",
+      "name": "Spotify Stream On 2026",
+      "dates": {
+        "start": "2026-03-01",
+        "end": "2026-03-01"
+      },
+      "location": {
+        "city": "Los Angeles",
+        "country": "USA",
+        "venue": "TBD or Virtual"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "podcasting",
+        "music",
+        "audio",
+        "Spotify platform"
+      ],
+      "vertical": [
+        "podcast",
+        "music",
+        "creator-economy"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://newsroom.spotify.com",
+      "ticket_price": {
+        "range": "Free/Invite",
+        "note": "Platform event"
+      },
+      "description": "Spotify's annual creator event. Podcast and music platform announcements, creator tools, monetization updates. Estimated date.",
+      "tags": [
+        "spotify",
+        "podcast",
+        "music",
+        "audio",
+        "platform"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 22,
+        "size": 15,
+        "relevance": 21,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "twitch-partner-day-2026",
+      "name": "Twitch Partner/Creator Day 2026",
+      "dates": {
+        "start": "2026-06-01",
+        "end": "2026-06-01"
+      },
+      "location": {
+        "city": "San Francisco",
+        "country": "USA",
+        "venue": "Twitch HQ or virtual"
+      },
+      "type": "industry",
+      "focus_areas": [
+        "Twitch platform",
+        "streaming tools",
+        "creator monetization"
+      ],
+      "vertical": [
+        "streaming",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 500,
+      "website": "https://www.twitch.tv",
+      "ticket_price": {
+        "range": "Invite-only",
+        "note": "Partner event"
+      },
+      "description": "Twitch's creator-focused day. Platform updates, new features, monetization. Estimated date.",
+      "tags": [
+        "twitch",
+        "streaming",
+        "platform",
+        "creator"
+      ],
+      "speakers": [],
+      "score": 72,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 10,
+        "relevance": 22,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "creator-economy-expo-2026",
+      "name": "Creator Economy Expo (CEX)",
+      "dates": {
+        "start": "2026-05-04",
+        "end": "2026-05-06"
+      },
+      "location": {
+        "city": "Cleveland",
+        "country": "USA",
+        "venue": "Huntington Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "creator business",
+        "content entrepreneurship",
+        "monetization"
+      ],
+      "vertical": [
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://creatoreconomyexpo.com",
+      "ticket_price": {
+        "range": "$599-$1,499",
+        "note": "Various tiers"
+      },
+      "description": "Dedicated creator economy conference founded by Joe Pulizzi. Focus on building sustainable content businesses. Estimated dates.",
+      "tags": [
+        "creator-economy",
+        "content-business",
+        "monetization"
+      ],
+      "speakers": [],
+      "score": 82,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 12,
+        "relevance": 25,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "social-media-pulse-summit-2026",
+      "name": "Social Media Pulse Summit",
+      "dates": {
+        "start": "2026-04-08",
+        "end": "2026-04-10"
+      },
+      "location": {
+        "city": "Virtual",
+        "country": "Online",
+        "venue": "Virtual"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "social media trends",
+        "AI",
+        "content strategy"
+      ],
+      "vertical": [
+        "social-media"
+      ],
+      "size": "small",
+      "estimated_attendees": 500,
+      "website": "https://socialmediapulse.com",
+      "ticket_price": {
+        "range": "Free-$199",
+        "note": "Virtual summit"
+      },
+      "description": "Virtual social media summit. Accessible entry point for social media professionals. Estimated dates.",
+      "tags": [
+        "social-media",
+        "virtual",
+        "trends",
+        "AI"
+      ],
+      "speakers": [],
+      "score": 50,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 5,
+        "relevance": 10,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "cvent-connect-2026",
+      "name": "Cvent CONNECT 2026",
+      "dates": {
+        "start": "2026-04-27",
+        "end": "2026-04-30"
+      },
+      "location": {
+        "city": "San Antonio",
+        "country": "USA",
+        "venue": "Henry B. Gonzalez Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "event tech",
+        "virtual events",
+        "creator events"
+      ],
+      "vertical": [
+        "events-tech"
+      ],
+      "size": "large",
+      "estimated_attendees": 5000,
+      "website": "https://www.cvent.com/en/cvent-connect",
+      "ticket_price": {
+        "range": "$999-$1,999",
+        "note": "Conference pass"
+      },
+      "description": "Event technology conference. Relevant for creator event organizers and platforms. Estimated dates.",
+      "tags": [
+        "event-tech",
+        "virtual-events",
+        "platform"
+      ],
+      "speakers": [],
+      "score": 50,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 10,
+        "relevance": 5,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "podcast-show-amsterdam-2026",
+      "name": "Podcast Show Amsterdam 2026",
+      "dates": {
+        "start": "2026-11-05",
+        "end": "2026-11-06"
+      },
+      "location": {
+        "city": "Amsterdam",
+        "country": "Netherlands",
+        "venue": "TBD"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "podcasting",
+        "European audio market"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "medium",
+      "estimated_attendees": 1000,
+      "website": "https://www.thepodcastshowlondon.com",
+      "ticket_price": {
+        "range": "€199-€499",
+        "note": "Estimated"
+      },
+      "description": "Podcast Show's potential European expansion. Estimated dates based on industry trends.",
+      "tags": [
+        "podcast",
+        "audio",
+        "europe",
+        "amsterdam"
+      ],
+      "speakers": [],
+      "score": 65,
+      "score_breakdown": {
+        "speakers": 18,
+        "size": 12,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "on-air-fest-2026",
+      "name": "On Air Fest 2026",
+      "dates": {
+        "start": "2026-03-06",
+        "end": "2026-03-08"
+      },
+      "location": {
+        "city": "New York",
+        "country": "USA",
+        "venue": "Wythe Hotel Brooklyn"
+      },
+      "type": "festival",
+      "focus_areas": [
+        "podcasting",
+        "audio storytelling",
+        "audio innovation"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 400,
+      "website": "https://www.onairfest.com",
+      "ticket_price": {
+        "range": "$199-$599",
+        "note": "Various tiers"
+      },
+      "description": "Boutique audio and podcasting festival in Brooklyn. Creative audio storytelling focus. Estimated dates.",
+      "tags": [
+        "podcast",
+        "audio",
+        "storytelling",
+        "brooklyn"
+      ],
+      "speakers": [],
+      "score": 65,
+      "score_breakdown": {
+        "speakers": 20,
+        "size": 8,
+        "relevance": 17,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "independent-podcast-conference-2026",
+      "name": "Independent Podcast Conference (London)",
+      "dates": {
+        "start": "2026-03-15",
+        "end": "2026-03-15"
+      },
+      "location": {
+        "city": "London",
+        "country": "UK",
+        "venue": "Conference Centre, Coin Street"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "independent podcasting",
+        "growth",
+        "innovation"
+      ],
+      "vertical": [
+        "podcast",
+        "creator-economy"
+      ],
+      "size": "small",
+      "estimated_attendees": 300,
+      "website": "https://producer.musicradiocreative.com/podcast-conference-guide-2026/",
+      "ticket_price": {
+        "range": "Free",
+        "note": "Free three-day conference"
+      },
+      "description": "Free podcast conference in London. Panels, meetups, performances, and social events for independent podcasters.",
+      "tags": [
+        "podcast",
+        "independent",
+        "london",
+        "free"
+      ],
+      "speakers": [],
+      "score": 60,
+      "score_breakdown": {
+        "speakers": 15,
+        "size": 8,
+        "relevance": 17,
+        "networking": 10,
+        "track_record": 10
+      }
+    },
+    {
+      "id": "adobe-max-2026",
+      "name": "Adobe MAX 2026",
+      "dates": {
+        "start": "2026-10-19",
+        "end": "2026-10-21"
+      },
+      "location": {
+        "city": "Las Vegas",
+        "country": "USA",
+        "venue": "Las Vegas Convention Center"
+      },
+      "type": "conference",
+      "focus_areas": [
+        "creative tools",
+        "design",
+        "video editing",
+        "AI",
+        "content creation"
+      ],
+      "vertical": [
+        "creative-tools",
+        "creator-economy"
+      ],
+      "size": "mega",
+      "estimated_attendees": 12000,
+      "website": "https://max.adobe.com",
+      "ticket_price": {
+        "range": "$1,895-$2,495",
+        "note": "Full conference pass"
+      },
+      "description": "Adobe's creativity conference. Major updates to Premiere, Photoshop, Express. Creator tools and workflows. Estimated dates.",
+      "tags": [
+        "adobe",
+        "creative-tools",
+        "design",
+        "video",
+        "AI"
+      ],
+      "speakers": [],
+      "score": 78,
+      "score_breakdown": {
+        "speakers": 25,
+        "size": 18,
+        "relevance": 15,
+        "networking": 10,
+        "track_record": 10
       }
     }
   ],

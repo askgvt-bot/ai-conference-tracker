@@ -8,10 +8,10 @@ export default function Home() {
       {/* Hero */}
       <div className="text-center mb-10">
         <h1 className="text-3xl sm:text-5xl font-bold text-white mb-3 tracking-tight">
-          AI Conference Tracker
+          Conference Tracker
         </h1>
         <p className="text-gray-400 text-lg max-w-xl mx-auto">
-          Every AI conference worldwide, ranked and searchable
+          AI &amp; Creator Economy conferences worldwide, ranked and searchable
         </p>
       </div>
       <ConferenceList conferences={conferences} />
