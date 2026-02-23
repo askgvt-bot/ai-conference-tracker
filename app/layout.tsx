@@ -3,11 +3,11 @@ import "./globals.css";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "AI Conference Tracker — Every AI conference worldwide, ranked and searchable",
-  description: "Discover and compare 80+ AI conferences worldwide. Filter by region, type, size, date, and price. Ranked by speaker quality, relevance, and networking value.",
+  title: "Conference Tracker — AI & Creator Economy conferences worldwide, ranked and searchable",
+  description: "Discover and compare 400+ AI & Creator Economy conferences worldwide. Filter by region, type, size, date, and price. Ranked by speaker quality, relevance, and networking value.",
   openGraph: {
-    title: "AI Conference Tracker",
-    description: "Every AI conference worldwide, ranked and searchable",
+    title: "Conference Tracker",
+    description: "AI & Creator Economy conferences worldwide, ranked and searchable",
     type: "website",
   },
 };
@@ -18,7 +18,7 @@ function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
         <Link href="/" className="flex items-center gap-2 text-lg font-bold text-white hover:text-cyan-400 transition-colors">
           <span className="text-xl">🌐</span>
-          <span>AI Conference Tracker</span>
+          <span>Conference Tracker</span>
         </Link>
         <nav className="flex items-center gap-1 sm:gap-4 text-sm">
           <Link href="/" className="px-3 py-1.5 rounded-lg text-gray-300 hover:text-white hover:bg-white/5 transition-all">

@@ -71,8 +71,8 @@ function SpeakersContent() {
     <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8">
       <div className="mb-8">
         <Link href="/" className="text-sm text-gray-500 hover:text-cyan-400 transition-colors mb-6 inline-block">← Back to conferences</Link>
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">AI Conference Speakers</h1>
-        <p className="text-gray-400 text-lg">Browse {speakers.length} speakers across 300+ AI conferences worldwide</p>
+        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Conference Speakers</h1>
+        <p className="text-gray-400 text-lg">Browse speakers across 400+ conferences worldwide</p>
       </div>
 
       {/* Conference filter banner */}

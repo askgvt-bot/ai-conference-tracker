@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Conference Tracker",
-  description: "300 AI conferences worldwide, scored & ranked",
+  title: "Conference Tracker",
+  description: "400+ conferences worldwide, scored & ranked",
 };
 
 export const viewport: Viewport = {

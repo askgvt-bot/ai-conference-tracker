@@ -4,8 +4,8 @@ import type { Metadata } from "next";
 import { CalendarView } from "@/components/CalendarView";
 
 export const metadata: Metadata = {
-  title: "Calendar — AI Conference Tracker",
-  description: "View all AI conferences on a monthly calendar grid.",
+  title: "Calendar — Conference Tracker",
+  description: "View all conferences on a monthly calendar grid.",
 };
 
 export default function CalendarPage() {

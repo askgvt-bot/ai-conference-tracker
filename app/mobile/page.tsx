@@ -133,7 +133,7 @@ export default function MobilePage() {
     <div className="min-h-dvh bg-[#0a0a12] text-slate-200">
       {/* Header */}
       <div className="sticky top-0 z-20 bg-[#0a0a12]/92 backdrop-blur-xl border-b border-white/5 px-5 pt-5 pb-3">
-        <h1 className="text-[26px] font-bold text-white">🎯 AI Conference Tracker</h1>
+        <h1 className="text-[26px] font-bold text-white">🎯 Conference Tracker</h1>
         <p className="text-[13px] text-slate-500 mt-0.5">{confs.length} conferences worldwide · Scored & ranked</p>
       </div>
 

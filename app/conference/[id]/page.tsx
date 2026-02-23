@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const c = getConference(id);
   if (!c) return { title: "Not Found" };
   return {
-    title: `${c.name} — AI Conference Tracker`,
+    title: `${c.name} — Conference Tracker`,
     description: c.description,
   };
 }
@@ -34,7 +34,7 @@ function generateICS(c: { name: string; dates: { start: string; end: string }; l
   const fmt = (d: string) => d.replace(/-/g, "") + "T090000Z";
   return `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//AI Conference Tracker//EN
+PRODID:-//Conference Tracker//EN
 BEGIN:VEVENT
 DTSTART:${fmt(c.dates.start)}
 DTEND:${fmt(c.dates.end)}

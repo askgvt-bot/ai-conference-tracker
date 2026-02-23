@@ -411,7 +411,7 @@ export default function RecommendationsPage() {
             Find Your Perfect Conferences
           </h1>
           <p className="text-gray-400">
-            Answer a few questions and we&apos;ll analyze 300+ AI conferences to find the best matches for you.
+            Answer a few questions and we&apos;ll analyze 400+ conferences to find the best matches for you.
           </p>
         </div>
 

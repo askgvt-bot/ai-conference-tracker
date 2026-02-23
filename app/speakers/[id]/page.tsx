@@ -12,8 +12,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const speaker = getSpeaker(id);
   if (!speaker) return { title: "Speaker Not Found" };
   return {
-    title: `${speaker.name} — AI Conference Tracker`,
-    description: `${speaker.name}, ${speaker.title} at ${speaker.organization}. Speaking at ${speaker.conference_count} AI conferences. ${speaker.bio}`,
+    title: `${speaker.name} — Conference Tracker`,
+    description: `${speaker.name}, ${speaker.title} at ${speaker.organization}. Speaking at conferences. ${speaker.bio}`,
   };
 }
 

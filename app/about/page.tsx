@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — AI Conference Tracker",
-  description: "About the AI Conference Tracker project.",
+  title: "About — Conference Tracker",
+  description: "About the Conference Tracker project.",
 };
 
 export default function AboutPage() {
@@ -11,7 +11,7 @@ export default function AboutPage() {
       <h1 className="text-3xl font-bold text-white mb-6">About</h1>
       <div className="space-y-4 text-gray-300 leading-relaxed">
         <p>
-          <strong className="text-white">AI Conference Tracker</strong> is a comprehensive directory of AI conferences happening around the world. We track conferences across academic, industry, technical, executive, and government categories.
+          <strong className="text-white">Conference Tracker</strong> is a comprehensive directory of AI &amp; Creator Economy conferences happening around the world. We track conferences across academic, industry, creator, technical, executive, and government categories.
         </p>
         <p>
           Each conference is scored based on five factors: <span className="text-cyan-400">speaker quality</span>, <span className="text-cyan-400">event size</span>, <span className="text-cyan-400">topic relevance</span>, <span className="text-cyan-400">networking value</span>, and <span className="text-cyan-400">track record</span>. This helps you quickly identify the most valuable events for your goals.
