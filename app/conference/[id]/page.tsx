@@ -2,6 +2,7 @@ import { getConferences, getConference, getFlag, formatDateRange, getRegion, get
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { HideConferenceButton } from "@/components/HideConferenceButton";
 
 export async function generateStaticParams() {
   return getConferences().map((c) => ({ id: c.id }));
@@ -180,6 +181,7 @@ export default async function ConferencePage({ params }: { params: Promise<{ id:
         <a href={`data:text/calendar;base64,${icsB64}`} download={`${c.id}.ics`} className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/10 text-gray-300 hover:text-white hover:border-white/20 transition-all text-sm">
           📅 Add to Calendar
         </a>
+        <HideConferenceButton conferenceId={c.id} />
       </div>
 
       {/* Related */}

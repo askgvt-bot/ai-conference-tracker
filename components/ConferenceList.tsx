@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
 import { Conference, getFlag, getRegion, formatDateRange, getPriceCategory } from "@/lib/data";
+import { useHiddenConferences } from "@/lib/useHiddenConferences";
 
 function ScoreBadge({ score }: { score: number }) {
   const color =
@@ -98,6 +99,8 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   const [price, setPrice] = useState("All");
   const [sort, setSort] = useState("Date");
   const [showPast, setShowPast] = useState(false);
+  const [showHidden, setShowHidden] = useState(false);
+  const { hiddenIds, isHidden } = useHiddenConferences();
 
   const today = useMemo(() => new Date().toISOString().split("T")[0], []);
   const sizeOrder: Record<string, number> = { small: 1, medium: 2, large: 3, mega: 4 };
@@ -122,6 +125,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
     if (month !== "All") result = result.filter((c) => c.dates.start.startsWith(month));
     if (price !== "All") result = result.filter((c) => getPriceCategory(c.ticket_price.range) === price);
     if (!showPast) result = result.filter((c) => (c.dates.end || c.dates.start) >= today);
+    if (!showHidden) result = result.filter((c) => !isHidden(c.id));
 
     result = [...result].sort((a, b) => {
       if (sort === "Score") return b.score - a.score;
@@ -131,7 +135,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
       return 0;
     });
     return result;
-  }, [conferences, search, region, type, vertical, size, month, price, sort, showPast, today, sizeOrder]);
+  }, [conferences, search, region, type, vertical, size, month, price, sort, showPast, showHidden, isHidden, today, sizeOrder]);
 
   const activeFilters = useMemo(() => {
     const f: { label: string; clear: () => void }[] = [];
@@ -145,7 +149,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
   }, [region, type, vertical, size, month, price]);
 
   const clearAll = useCallback(() => {
-    setSearch(""); setRegion("All"); setType("All"); setVertical("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date"); setShowPast(false);
+    setSearch(""); setRegion("All"); setType("All"); setVertical("All"); setSize("All"); setMonth("All"); setPrice("All"); setSort("Date"); setShowPast(false); setShowHidden(false);
   }, []);
 
   return (
@@ -179,6 +183,17 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
           </span>
           Show past events
         </button>
+        {hiddenIds.length > 0 && (
+          <button
+            onClick={() => setShowHidden(!showHidden)}
+            className={`flex items-center gap-2 px-3 py-2 rounded-lg border text-sm transition-all ${showHidden ? "bg-cyan-500/20 text-cyan-400 border-cyan-500/40" : "border-white/10 text-gray-400 hover:text-white hover:border-white/20"}`}
+          >
+            <span className={`w-4 h-4 rounded border flex items-center justify-center text-xs ${showHidden ? "bg-cyan-500 border-cyan-500 text-white" : "border-white/20"}`}>
+              {showHidden && "✓"}
+            </span>
+            Show hidden ({hiddenIds.length})
+          </button>
+        )}
       </div>
 
       {/* Month pills */}
@@ -215,7 +230,7 @@ export function ConferenceList({ conferences }: { conferences: Conference[] }) {
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filtered.map((c) => (
-            <Link key={c.id} href={`/conference/${c.id}`} className="group block rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur hover:bg-white/[0.06] hover:border-white/20 transition-all">
+            <Link key={c.id} href={`/conference/${c.id}`} className={`group block rounded-xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur hover:bg-white/[0.06] hover:border-white/20 transition-all ${isHidden(c.id) ? "opacity-60" : ""}`}>
               <div className="flex items-start justify-between gap-2 mb-3">
                 <h3 className="font-semibold text-white group-hover:text-cyan-400 transition-colors leading-snug line-clamp-2">
                   {c.name}
